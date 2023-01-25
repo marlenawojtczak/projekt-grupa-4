@@ -109,7 +109,7 @@ dist
 .tern-port
 
 # parcel cache
-.parcel-cache
+.parcel-cache/
 
 # package-lock.json
 .package-lock.json
