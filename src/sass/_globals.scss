@@ -1,0 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: $font-titan;
+  color: $primaryColor;
+}
+.container {
+  max-width: 480px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+svg {
+  vertical-align: middle;
+}
