@@ -1,60 +1,59 @@
-
 /* jasne tło, białe napisy, przycisk biały */
-$primaryColor: #FFFFFF;
+$primaryColor: #ffffff;
 
 /* header tło */
-$secondaryColor: #FFB8CA;
+$secondaryColor: #ffb8ca;
 
 /* jasny róż tło */
-$tertiaryColor: #FFF5F6;
+$tertiaryColor: #fff5f6;
 
 /* przycisk czerwony, hoover ikony social, hoover napisy menu, kolor nr tel, duże napisy, napisy button */
-$redColor: #D41443;
+$redColor: #d41443;
 
 /* tło dookoła loda, napisy, ikony social */
-$iceColor: #FFA5BA;
+$iceColor: #ffa5ba;
 
 /* tło menu hamburger */
-$hamburgerColor: #E17992;
+$hamburgerColor: #e17992;
 
 /* hamburger – border pomiędzy napisami */
-$hamburgerBorderColor: #E18298;
+$hamburgerBorderColor: #e18298;
 
 /* przycisk our location plus hoover*/
-$buttonFirstColor: #D41342;
+$buttonFirstColor: #d41342;
 
 /* przycisk biały hoover */
-$buttonSecondColor: #ECEBEB;
+$buttonSecondColor: #ecebeb;
 
 /* przycisk products hoover */
-$buttonThirdColor: #C7133E;
+$buttonThirdColor: #c7133e;
 
 /* kolor kawowy */
-$coffeeColor: #F0D1A5;
+$coffeeColor: #f0d1a5;
 
 /* kolor milkshake / foodtruck */
-$milkshakeColor: #C2E297;
+$milkshakeColor: #c2e297;
 
 /* kolor wypełnienie ikony cytatu */
-$quoteColor: #E1E1E1;
+$quoteColor: #e1e1e1;
 
 /* kolor tła cytatu */
-$quoteBgColor: #FAFAFA;
+$quoteBgColor: #fafafa;
 
 /* kolor czcionki czarny */
 $firstFontColor: #000000;
 
 /* kolor czcionki szary */
-$secondFontColor: #907E82;
+$secondFontColor: #907e82;
 
 /* customer kropki czerwone */
-$customerFirstColor: #C7133E;
+$customerFirstColor: #c7133e;
 
 /* customer domek */
-$customerSecondColor: #D31342;
+$customerSecondColor: #d31342;
 
 /* customer szare kropki */
-$customerThirdColor: #D9D9D9;
+$customerThirdColor: #d9d9d9;
 
 $font-titan: ‘Titan One’, cursive;
 $font-dm-sans: ‘DM Sans’, sans-serif;
@@ -62,10 +61,10 @@ $font-dm-sans: ‘DM Sans’, sans-serif;
 $borderThin: 1px;
 $borderRegular: 2px;
 
-$borderRadiusSocial: 50%; 
-$borderRadiusButton: 20px; 
-$borderRadiusProducts: 24px; 
-$borderRadiusContacts: 30px; 
+$borderRadiusSocial: 50%;
+$borderRadiusButton: 20px;
+$borderRadiusProducts: 24px;
+$borderRadiusContacts: 30px;
 
 $transitionDurationDefault: 300ms;
 $transitionTimingDefault: cubic-bezier(0.4, 0, 0.3, 1);
