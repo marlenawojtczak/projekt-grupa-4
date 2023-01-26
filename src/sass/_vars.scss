@@ -1,0 +1,71 @@
+
+/* jasne tło, białe napisy, przycisk biały */
+$primaryColor: #FFFFFF;
+
+/* header tło */
+$secondaryColor: #FFB8CA;
+
+/* jasny róż tło */
+$tertiaryColor: #FFF5F6;
+
+/* przycisk czerwony, hoover ikony social, hoover napisy menu, kolor nr tel, duże napisy, napisy button */
+$redColor: #D41443;
+
+/* tło dookoła loda, napisy, ikony social */
+$iceColor: #FFA5BA;
+
+/* tło menu hamburger */
+$hamburgerColor: #E17992;
+
+/* hamburger – border pomiędzy napisami */
+$hamburgerBorderColor: #E18298;
+
+/* przycisk our location plus hoover*/
+$buttonFirstColor: #D41342;
+
+/* przycisk biały hoover */
+$buttonSecondColor: #ECEBEB;
+
+/* przycisk products hoover */
+$buttonThirdColor: #C7133E;
+
+/* kolor kawowy */
+$coffeeColor: #F0D1A5;
+
+/* kolor milkshake / foodtruck */
+$milkshakeColor: #C2E297;
+
+/* kolor wypełnienie ikony cytatu */
+$quoteColor: #E1E1E1;
+
+/* kolor tła cytatu */
+$quoteBgColor: #FAFAFA;
+
+/* kolor czcionki czarny */
+$firstFontColor: #000000;
+
+/* kolor czcionki szary */
+$secondFontColor: #907E82;
+
+/* customer kropki czerwone */
+$customerFirstColor: #C7133E;
+
+/* customer domek */
+$customerSecondColor: #D31342;
+
+/* customer szare kropki */
+$customerThirdColor: #D9D9D9;
+
+$font-titan: ‘Titan One’, cursive;
+$font-dm-sans: ‘DM Sans’, sans-serif;
+
+$borderThin: 1px;
+$borderRegular: 2px;
+
+$borderRadiusSocial: 50%; 
+$borderRadiusButton: 20px; 
+$borderRadiusProducts: 24px; 
+$borderRadiusContacts: 30px; 
+
+$transitionDurationDefault: 300ms;
+$transitionTimingDefault: cubic-bezier(0.4, 0, 0.3, 1);
