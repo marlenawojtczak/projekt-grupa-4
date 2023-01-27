@@ -1,10 +1,15 @@
 .about-wrapper {
   background: $tertiaryColor;
+  padding-bottom: 39px;
+  margin: 0px;
 }
 
 .about-title {
   display: flex;
   flex-direction: column;
+  padding: 125px 40px 26px 40px;
+  font-family: $font-titan;
+
   &__text {
     font-size: 18px;
     line-height: 1.66;
@@ -19,5 +24,97 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $redColor;
+  }
+}
+
+.milk-background {
+  background-image: url('../images/about/about-bg-mobile@2x.png');
+  background-size: 100vw;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.about-cow {
+  display: flex;
+  margin: 0px auto;
+  padding-bottom: 46px;
+  justify-content: center;
+}
+
+.about-text {
+  padding: 0px 30px 17px 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-dm-sans;
+  gap: 45px;
+  &__black {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: $firstFontColor;
+    text-align: left;
+  }
+  &__grey {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: $secondFontColor;
+  }
+}
+
+.about-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.285;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  color: $redColor;
+  background: $primaryColor;
+  border-radius: 22px;
+  border: none;
+  margin: 0 auto;
+  width: 176px;
+  height: 44px;
+  &__svg {
+    fill: $redColor;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+}
+
+.about-info {
+  padding: 39px 50px 106px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  &__element {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+  &__img {
+    width: fit-content;
+  }
+  &__numbers {
+    font-size: 36px;
+    line-height: 1.138;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $redColor;
+    font-family: $font-titan;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: $firstFontColor;
+    font-family: $font-dm-sans;
   }
 }
