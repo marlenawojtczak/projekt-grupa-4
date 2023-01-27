@@ -1,0 +1,27 @@
+.advantages {
+  display: grid;
+  background-color: $tertiaryColor;
+  width: 100%;
+
+  &__header {
+    display: none;
+  }
+  &__list {
+    list-style: none;
+    text-align: left;
+  }
+  &__number {
+    color: $redColor;
+    font-family: $font-titan;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.145;
+  }
+  &__article {
+    color: $firstFontColor;
+    font-family: $font-dm-sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+}
