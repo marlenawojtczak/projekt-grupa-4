@@ -1,0 +1,23 @@
+.about-wrapper {
+  background: $tertiaryColor;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    font-size: 18px;
+    line-height: 1.66;
+    text-align: center;
+    text-transform: uppercase;
+    color: $iceColor;
+  }
+  &__header {
+    font-size: 34px;
+    line-height: 1.147;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $redColor;
+  }
+}
