@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream made with Passion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ============== HEADER START ============ -->
+
+      <header class="header">
+        <nav class="nav">
+          <a class="logo" href="#"
+            ><img
+              width="199"
+              height="50"
+              src="images/hero/logo.png"
+              alt="Logo image"
+              srcset="images/hero/logo.png 199w, images/hero/logo@2x.png 398w, images/hero/logo@3x.png 597w"
+              sizes="(min-width:1280px) 199px, (min-width:768px) 398px, 597px"
+          /></a>
+
+          <!-- -----------Responsive nav Burger-button start ------ -->
+
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="20" height="12" fill="#000"><use href="images/icons.svg#icon-Burger"></use></svg>
+          </button>
+
+          <!-- -----------Responsive nav Burger-button end--------- -->
+
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#">Home</a></li>
+            <li><a class="nav__link" href="#products">About us</a></li>
+            <li><a class="nav__link" href="#about-us">How it's made?</a></li>
+            <li><a class="nav__link" href="#gallery">Our products</a></li>
+            <li><a class="nav__link" href="#contacts">Contact</a></li>
+          </ul>
+          <button class="nav__button" type="button">Buy now</button>
+        </nav>
+        <div class="header__circle-bg"></div>
+        <img
+          class="header__hero-ice-cream"
+          width="171"
+          height="410"
+          src="images/hero/hero-cone-mobile.png"
+          alt="Logo image"
+          srcset="
+            images/hero/hero-cone-tablet.png     143w,
+            images/hero/hero-cone-mobile.png     171w,
+            images/hero/hero-cone-desktop.png    236w,
+            images/hero/hero-cone-tablet@2x.png  286w,
+            images/hero/hero-cone-mobile@2x.png  342w,
+            images/hero/hero-cone-tablet@3x.png  429w,
+            images/hero/hero-cone-desktop@2x.png 472w,
+            images/hero/hero-cone-mobile@3x.png  513w,
+            images/hero/hero-cone-desktop@3x.png 708w
+          "
+          sizes="(min-width:1280px) 236px, (min-width:768px) 143px, 171px"
+        />
+        <div class="header__center">
+          <div class="header__text">
+            <p class="header__text-white">ICE CREAM MADE WITH <span class="header__text-red">PASSION</span></p>
+            <ul class="header__buttons">
+              <li>
+                <a href="#"><button type="button" class="header__button header__button--opposite-color">Products</button></a>
+              </li>
+              <li>
+                <a href="#"><button type="button" class="header__button">How it's made</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img
+          class="header__hero-girl"
+          width="168"
+          height="133"
+          src="images/hero/hero-girl-tablet.png"
+          alt="Logo image"
+          srcset="
+            images/hero/hero-girl-tablet.png     168w,
+            images/hero/hero-girl-desktop.png    293w,
+            images/hero/hero-girl-tablet@2x.png  336w,
+            images/hero/hero-girl-tablet@3x.png  504w,
+            images/hero/hero-girl-desktop@2x.png 586w,
+            images/hero/hero-girl-desktop@3x.png 879w
+          "
+          sizes="(min-width:1280px) 188px, 124px"
+        />
+        <img
+          class="header__hero-milk"
+          width="124"
+          height="126"
+          src="images/hero/hero-jug-tablet.png"
+          alt="Logo image"
+          srcset="
+            images/hero/hero-jug-tablet.png     124w,
+            images/hero/hero-jug-desktop.png    188w,
+            images/hero/hero-jug-tablet@2x.png  248w,
+            images/hero/hero-jug-tablet@3x.png  372w,
+            images/hero/hero-jug-desktop@2x.png 376w,
+            images/hero/hero-jug-desktop@3x.png 564w
+          "
+          sizes="(min-width:1280px) 293px, 168px"
+        />
+
+        <!-- -----------------Responsive nav START----------- -->
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu" type="button">
+            <svg class="icon" width="24" height="24"><use href="images/icons.svg#icon-close"></use></svg>
+          </button>
+          <div class="mobile-menu"></div>
+        </div>
+        <!-- -----------------Responsive nav END----------- -->
+      </header>
+    <!-- ============== SCRIPTS ============ -->
+    <script src="js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
