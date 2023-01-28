@@ -1,0 +1,26 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $tertiaryColor;
+    font-family: $font-dm-sans;
+
+    &__element {
+        background-color: $primaryColor;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    }
+
+    &__unit-type {
+        color: $primaryColor;
+        border-radius: 4px;
+
+        &--cafe {
+            background-color: ;  
+        }
+
+        &--foodtruck {
+            background-color: ;  
+        }
+    }
+}
