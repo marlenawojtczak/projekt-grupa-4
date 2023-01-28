@@ -3,9 +3,9 @@
   flex-direction: column;
   list-style: none;
   margin-top: 121px;
-  margin-bottom: 98px;
   @include tablet {
-    flex-direction: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__description-title {
@@ -18,6 +18,12 @@
     text-transform: uppercase;
     color: $iceColor;
     margin-bottom: 15px;
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
   }
 
   &__title-section {
@@ -30,6 +36,13 @@
     text-align: center;
     text-transform: uppercase;
     color: $redColor;
+    margin-bottom: 144px;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      font-size: 58px;
+    }
   }
 
   &__wrapper {
@@ -52,17 +65,19 @@
   }
 
   &__wrap {
-    margin-top: -100px;
+    position: relative;
+    margin-bottom: 135px;
   }
 
   &__img {
     display: flex;
-    position: relative;
-    vertical-align: middle;
+    position: absolute;
     width: 249px;
     height: 252px;
     margin: 0 auto;
-    top: 135px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 17px;
   }
 
   &__title {
