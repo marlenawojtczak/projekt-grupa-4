@@ -1,1 +1,78 @@
-// Rafał
+.contacts {
+  background-color: $tertiaryColor;
+  &__title {
+    display: none;
+  }
+  &-grid {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+  }
+  &__element {
+    width: 220px;
+    margin: 0 auto;
+    padding: 43px 20px;
+    background-color: $primaryColor;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    border-bottom: 1px solid $quoteColor;
+    gap: 10px;
+  }
+  &__unit-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 16px;
+    background-color: $coffeeColor;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    &--foodtruck {
+      background-color: $milkshakeColor;
+      width: 130px;
+    }
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: $firstFontColor;
+    &--time {
+      color: $iceColor;
+      margin-top: -2px;
+    }
+  }
+  &__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondFontColor;
+  }
+  &__contact-details {
+    margin-top: 25px;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondFontColor;
+  }
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+    gap: 10px;
+    align-items: center;
+  }
+}
