@@ -1,0 +1,297 @@
+@use "../sass/utils/mixins1" as *;
+
+.header {
+  position: relative;
+  padding: 6px 20px 160px;
+  background-color: #ffb8ca;
+  min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
+  overflow: hidden;
+
+  &__circle-bg {
+    width: 346px;
+    height: 344px;
+    position: absolute;
+    top: 83px;
+    left: 36px;
+    // left: calc(100vw - 284px);
+    border-radius: 50%;
+    background-color: #ffa5ba;
+    z-index: 0;
+  }
+
+  &__hero-ice-cream {
+    position: absolute;
+    bottom: 0;
+    left: 117px;
+    width: 171px;
+    height: auto;
+    display: block;
+  }
+  &__center {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    position: absolute;
+    left: 20px;
+    top: 193px;
+    width: 218px;
+  }
+  &__text-white {
+    font-family: Titan One;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #fff;
+  }
+  &__text-red {
+    font-family: Titan One;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #d41443;
+  }
+
+  &__buttons {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin-top: 19px;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    background-color: #ffffff;
+    color: #d41443;
+    fill: #d41443;
+    border-radius: 20px;
+    padding: 0 13.6px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    line-height: 10px;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    &:hover,
+    &:focus {
+      background-color: #ececec;
+    }
+    &--opposite-color {
+      background-color: #d41443;
+      color: #fff;
+      fill: #fff;
+
+      &:hover,
+      &:focus {
+        background-color: #c7133e;
+      }
+    }
+  }
+  &__hero-girl {
+    display: hidden;
+    opacity: 0;
+  }
+
+  &__hero-milk {
+    display: none;
+  }
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+
+  &__links {
+    display: none;
+  }
+
+  &__button {
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0em;
+    background-color: #d41443;
+    display: none;
+    color: #fff;
+  }
+}
+
+// ======================== RESPONSIVE NAV BURGER START =====================
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #e17992;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.menu-toggle {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: color 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+// ======================== RESPONSIVE NAV BURGER END =====================
+
+/* =============================== MEDIA =====================*/
+
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
+    padding: 37px 34px 34px;
+
+    &__circle-bg {
+      width: 324px;
+      height: 332px;
+      top: 31px;
+      left: 307px;
+    }
+    &__text {
+      display: none;
+    }
+
+    &__hero-ice-cream {
+      position: absolute;
+      bottom: 0;
+      left: 378px;
+      width: 143px;
+      height: auto;
+      display: block;
+    }
+
+    &__hero-girl {
+      display: initial;
+      position: absolute;
+      bottom: 0;
+      left: 566px;
+      width: 168px;
+      height: auto;
+      display: block;
+      opacity: 1;
+    }
+
+    &__hero-milk {
+      display: initial;
+      position: absolute;
+      bottom: 28px;
+      left: 34px;
+      width: 124px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+  }
+
+  .nav {
+    gap: 30px;
+
+    &__button {
+      display: initial;
+      width: 158px;
+      height: 44px;
+      border-radius: 22px;
+      border: none;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        outline: none;
+        color: #d41443;
+        background-color: #ecebeb;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
+    padding: 37px 115px 56px 46px;
+    background-color: #ffb8ca;
+    &__circle-bg {
+      width: 538px;
+      height: 538px;
+      top: 52px;
+      left: 475px;
+    }
+
+    &__hero-ice-cream {
+      left: 594px;
+      width: 236px;
+      height: auto;
+      display: block;
+    }
+
+    &__hero-girl {
+      left: 878px;
+      width: 293px;
+      height: auto;
+      display: block;
+    }
+
+    &__hero-milk {
+      bottom: 44px;
+      left: 77px;
+      width: 188px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .nav {
+    &__links {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    &__link {
+      @include font-mixin(#fff, 700, 1rem, 1.31, 0em);
+      &:hover,
+      &:focus {
+        color: #d41443;
+      }
+    }
+    .menu-toggle {
+      display: none;
+    }
+  }
+}
