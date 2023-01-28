@@ -1,17 +1,129 @@
-<section>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">treść slide</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+<section class="reviews">
+  <div class="container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- First slide -->
+        <div class="swiper-slide"></div>
+        <picture>
+          <img
+            src="./images/customers/customer-01.png"
+            alt="Picture of the first customers"
+            class="reviews__foto"
+          />
+          <source
+            srcset="./images/customers/customer-01@2x.png"
+            media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
+          />
+
+          <source
+            srcset="./images/customers/customer-01@3x.png"
+            media="(min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx)"
+          />
+        </picture>
+
+        <article class="reviews__article">
+          <div class="reviews__article--wrapper">
+            <svg class="reviews__icon" width="54" height="40">
+              <use href="./images/icons.svg#"></use>
+              <!-- ikonka akapit -->
+            </svg>
+            <p class="reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </article>
+
+        <ul class="reviews__list reviews__list--dots">
+          <li class="reviews__item--dot"></li>
+          <li class="reviews__item--dot"></li>
+          <li class="reviews__item--dot"></li>
+        </ul>
+        <h2 class="reviews__name">Emily, Los Angeles</h2>
+      </div>
+
+      <!-- secondary slide -->
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="./images/customers/customer-02@2x.png"
+            media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi),
+  (min-resolution: 2dppx) "
+          />
+
+          <source
+            srcset="./images/customers/customer-02@3x.png"
+            media="(min-device-pixel-ratio: 3), (min-resolution: 288dpi),
+  (min-resolution: 3dppx)"
+          />
+
+          <img
+            src="./images/customers/customer-02.png"
+            alt="photos of the second client"
+            class="reviews__foto"
+          />
+        </picture>
+
+        <article class="reviews__article">
+          <div class="reviews__article--wrapper">
+            <svg class="reviews__icon" width="54" height="40">
+              <use href="./images/icons.svg#"></use>
+              <!-- ikonka akapit -->
+            </svg>
+            <p class="reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </article>
+        <ul class="reviews__list reviews__list--dots">
+          <li class="reviews__item--dot"></li>
+          <li class="reviews__item--dot"></li>
+          <li class="reviews__item--dot"></li>
+        </ul>
+        <h2 class="reviews__name">Emily, Los Angeles</h2>
+      </div>
+
+      <!-- third slide -->
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="./images/customers/customer-03@2x.png"
+            media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) "
+          />
+
+          <source
+            srcset="./images/customers/customer-03@3x.png"
+            media="(min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx)"
+          />
+          <img
+            src="./images/customers/customer-03.png"
+            alt="Photos of the third customer"
+            class="reviews__foto"
+          />
+        </picture>
+
+        <article class="reviews__article">
+          <div class="reviews__article--wrapper">
+            <svg class="reviews__icon" width="54" height="40">
+              <use href="./images/icons.svg#"></use>
+              <!-- ikonka akapit -->
+            </svg>
+            <p class="reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </article>
+
+        <ul class="reviews__list reviews__list--dots">
+          <li class="reviews__item--dot"></li>
+          <li class="reviews__item--dot"></li>
+          <li class="reviews__item--dot"></li>
+        </ul>
+        <h2 class="reviews__name">Emily, Los Angeles</h2>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 </section>
-
