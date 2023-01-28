@@ -1,7 +1,9 @@
 .advantages {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: $tertiaryColor;
-  width: 100%;
+  padding: 39px 50px 106px 0px;
+  gap: 38px;
 
   &__header {
     display: none;
@@ -10,18 +12,29 @@
     list-style: none;
     text-align: left;
   }
+  &__element {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__img {
+    width: fit-content;
+  }
   &__number {
     color: $redColor;
     font-family: $font-titan;
     font-size: 36px;
     font-weight: 400;
     line-height: 1.145;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
-  &__article {
+  &__text {
     color: $firstFontColor;
     font-family: $font-dm-sans;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.7;
+    letter-spacing: 0.02em;
   }
 }

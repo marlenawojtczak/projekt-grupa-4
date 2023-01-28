@@ -3,28 +3,46 @@
   flex-direction: column;
   list-style: none;
   margin-top: 121px;
-  margin-bottom: 98px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__description-title {
     font-family: 'Titan One', cursive;
     font-weight: 400;
     font-size: 18px;
     text-align: center;
+    line-height: 1.145em;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $iceColor;
     margin-bottom: 15px;
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
   }
 
   &__title-section {
     font-family: 'Titan One', cursive;
     font-weight: 400;
     font-size: 34px;
+    line-height: 1.145em;
     letter-spacing: 0.04em;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
     color: $redColor;
+    margin-bottom: 144px;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      font-size: 58px;
+    }
   }
 
   &__wrapper {
@@ -47,15 +65,19 @@
   }
 
   &__wrap {
-    margin-top: -100px;
+    position: relative;
+    margin-bottom: 135px;
   }
 
   &__img {
     display: flex;
-    position: relative;
-    vertical-align: middle;
+    position: absolute;
+    width: 249px;
+    height: 252px;
     margin: 0 auto;
-    top: 135px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 17px;
   }
 
   &__title {
@@ -63,6 +85,7 @@
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.04em;
+    line-height: 1.145em;
     text-align: center;
     text-transform: uppercase;
     color: $primaryColor;
@@ -94,7 +117,7 @@
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.04em;
-    line-height: 21.28px;
+    line-height: 1.52em;
     color: $primaryColor;
     padding: 0px 39px 0px 41px;
     margin-bottom: 30px;
