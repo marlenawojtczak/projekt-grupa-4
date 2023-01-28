@@ -7,8 +7,9 @@
     }
     &__text {
         text-align: left;
-        max-width: 75%;
+        max-width: 240px;
         &--small {
+            font-family: $font-titan;
             color: $iceColor;
             text-transform: uppercase;
             font-style:normal;
@@ -17,6 +18,7 @@
             margin-bottom: 17px;
         }
         &--big {
+            font-family: $font-titan;
             color: $buttonFirstColor;
             text-transform: uppercase;
             font-style:normal;
@@ -84,6 +86,6 @@
         font-style: bold;
         line-height: 1.52;
         margin: 21px 0 32px;
-        max-width: 45%;
+        max-width: 144px;
     }
 }
