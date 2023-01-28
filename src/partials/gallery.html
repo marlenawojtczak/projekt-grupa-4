@@ -1,2 +1,25 @@
-<div>TEST</div>
-<div>TEST 2</div>
+<section class="gallery">
+  <div class="container gallery__container">
+    <picture>
+      <source srcset="./images/gallery/gallery-desktop.png" media="(min-width: 1280px)" />
+      <source
+        srcset="./images/gallery/gallery-desktop@2x.png"
+        media="(min-width: 1280px and min-device-pixel-radio: 2)"
+      />
+
+      <source srcset="./images/gallery/gallery-tablet.png" media="(min-width: 768px)" />
+      <source
+        srcset="./images/gallery/gallery-tablet@2x.png"
+        media="(min-width: 768px and min-device-pixel-radio: 2)"
+      />
+
+      <img src="./images/gallery/gallery-mobile.png" alt="Galery of the ice cream " />
+
+      <source
+        srcset="./images/gallery/gallery-mobile@2x.png"
+        media="(min-device-pixel-ratio: 2),  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) "
+      />
+    </picture>
+  </div>
+</section>
