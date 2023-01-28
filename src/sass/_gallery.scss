@@ -1,0 +1,33 @@
+.container {
+  @include desktop {
+    max-width: 1280px;
+  }
+
+  @include tablet {
+    max-width: 786px;
+  }
+}
+.gallery {
+  height: 122px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, $tertiaryColor 40%, $primaryColor 60%);
+  text-align: center;
+
+  @include desktop {
+    height: 430px;
+    text-align: center;
+  }
+
+  @include tablet {
+    height: 264px;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+}
