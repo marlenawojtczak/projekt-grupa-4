@@ -1,10 +1,16 @@
 .reviews {
   &__article {
-    background-color: $primaryColor;
+    background-color: $quoteBgColor;
     padding-bottom: 26px;
     padding-top: 43px;
 
     &--wrapper {
+      background-image: repeating-linear-gradient(
+        $quoteBgColor,
+        $quoteBgColor 30px,
+        $quoteColor 1px,
+        $quoteColor 31px
+      );
       max-width: 180px;
       width: 100%;
       height: 100%;
@@ -13,10 +19,20 @@
     }
   }
 
-  &__photo {
+  &__picture {
+    display: flex;
+  }
+
+  &__picture-customer {
     max-width: 85px;
     width: 100%;
-   margin-left: 80px;
+     margin-bottom: 29px;
+     justify-content: center;
+     justify-items: center;
+     text-align: center;
+  
+    // padding-left: 80px;
+    
     
   }
 
@@ -31,13 +47,16 @@
     font-family: $font-dm-sans;
     font-weight: 500;
     size: 14px;
+    line-height: 30.6px;
   }
 
-//   &__icon {
-//     position: absolute;
-//     z-index: 1;
-//   
-//   }
+  &__icon {
+    position: absolute;
+    z-index: 1;
+    left: 1px;
+    top: -22px;
+    fill: $quoteColor;
+  }
 
   &__list {
     display: flex;
@@ -77,12 +96,10 @@
   }
 }
 
-
-
 .swiper .swiper-pagination-bullet-active {
   background-image: url('../images/svg/home.svg');
   background-size: 100%;
- background-color: $secondFontColor;
+  background-color: $secondFontColor;
   background-repeat: no-repeat;
   color: red;
 }
