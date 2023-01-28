@@ -1,16 +1,14 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
   background-color: $tertiaryColor;
-  padding: 39px 50px 106px 0px;
-  gap: 38px;
-
+  padding: 39px 50px 97px 0;
   &__header {
     display: none;
   }
   &__list {
     list-style: none;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
   }
   &__element {
     display: flex;
