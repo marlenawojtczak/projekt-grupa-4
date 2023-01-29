@@ -1,3 +1,1 @@
-<symbol id="icon-greater-than" viewBox="0 0 26 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
-</symbol>
+<symbol id="icon-greater-than" viewBox="0 0 26 32"><path fill="none" stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8" style="stroke:var(--color1, #D41443)"/></symbol>
