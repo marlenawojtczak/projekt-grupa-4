@@ -9,13 +9,27 @@
   flex-direction: column;
   padding: 125px 40px 26px 40px;
   font-family: $font-titan;
-
+  @include tablet {
+    padding-bottom: 50px;
+  }
+  @include desktop {
+    padding-bottom: 55px;
+  }
   &__text {
     font-size: 18px;
     line-height: 1.66;
     text-align: center;
     text-transform: uppercase;
     color: $iceColor;
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.153;
+    }
+    @include desktop {
+      font-size: 30px;
+      line-height: 1.133;
+      letter-spacing: 0.04em;
+    }
   }
   &__header {
     font-size: 34px;
@@ -24,21 +38,34 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $redColor;
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.145;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.137;
+      letter-spacing: 0.06em;
+    }
   }
 }
 
 .milk-background {
   background-image: url('../images/about/about-bg-mobile@2x.png');
-  background-size: 100vw;
-  background-position: bottom;
+  background-size: 90vw;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  @include tablet {
+    background: none;
+  }
 }
 .about-cow {
   display: flex;
   margin: 0px auto;
   padding-bottom: 46px;
   justify-content: center;
+  @include tablet {
+  }
 }
 
 .about-text {
@@ -47,18 +74,31 @@
   flex-direction: column;
   font-family: $font-dm-sans;
   gap: 45px;
+  @include tablet {
+    padding: 50px 0px 62px 0px;
+  }
   &__black {
     font-weight: 500;
     font-size: 12px;
-    line-height: 162%;
+    line-height: 1.62;
     color: $firstFontColor;
     text-align: left;
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.76;
+    }
   }
   &__grey {
     font-weight: 500;
     font-size: 12px;
-    line-height: 162%;
+    line-height: 1.62;
     color: $secondFontColor;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+    }
   }
 }
 
@@ -78,43 +118,26 @@
   margin: 0 auto;
   width: 176px;
   height: 44px;
+  @include tablet {
+    margin: 0px;
+  }
   &__svg {
-    fill: $redColor;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
+    fill: none;
+    stroke: $redColor;
+    margin-left: 8px;
   }
 }
 
-.about-info {
-  padding: 39px 50px 106px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-  &__element {
+.content-position {
+  @include tablet {
     display: flex;
-    gap: 12px;
-    flex-direction: column;
+    gap: 17px;
+    padding: 0px 34px;
+    margin: 0 auto;
   }
-  &__img {
-    width: fit-content;
-  }
-  &__numbers {
-    font-size: 36px;
-    line-height: 1.138;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $redColor;
-    font-family: $font-titan;
-  }
-  &__text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    color: $firstFontColor;
-    font-family: $font-dm-sans;
+  @include desktop {
+    display: flex;
+    padding: 0px 113px;
+    margin: 0;
   }
 }
