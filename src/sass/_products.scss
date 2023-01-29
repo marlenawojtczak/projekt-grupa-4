@@ -1,8 +1,19 @@
 .products {
-  display: flex;
-  flex-direction: column;
-  margin-top: 121px;
-  margin-bottom: -54px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    @include desktop {
+      gap: 30px;
+    }
+  }
 
   &__description-title {
     font-family: 'Titan One', cursive;
@@ -42,18 +53,17 @@
   }
 
   &__wrapper {
-    max-width: 280px;
+    width: 280px;
     border-radius: 24px;
     padding-bottom: 41px;
     margin: 0 auto;
-    margin-bottom: 17px;
     gap: 17px;
     @include tablet {
-      max-width: 220px;
+      width: 220px;
+      padding-bottom: 40px;
     }
-
     @include desktop {
-      max-width: 329px;
+      width: 329px;
     }
 
     &--cream-bg {
@@ -71,17 +81,23 @@
 
   &__wrap {
     position: relative;
-    margin-bottom: 135px;
+    padding-bottom: 135px;
   }
 
   &__img {
     display: flex;
     position: absolute;
     width: 249px;
-    height: 252px;
-    margin: 0 auto;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include tablet {
+      width: 220px;
+    }
+
+    @include desktop {
+      width: 335px;
+    }
   }
 
   &__title {
@@ -95,7 +111,15 @@
     text-transform: uppercase;
     color: $primaryColor;
     padding-top: 160px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    @include tablet {
+      font-size: 23px;
+    }
+    @include desktop {
+      font-size: 30px;
+      padding-bottom: 32px;
+      padding-top: 200px;
+    }
   }
 
   &__list-dot {
@@ -103,7 +127,11 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    @include desktop {
+      padding-bottom: 30px;
+    }
   }
 
   &__item-dot::after {
@@ -124,7 +152,15 @@
     letter-spacing: 0.04em;
     line-height: 1.52em;
     color: $primaryColor;
-    padding: 0px 39px 0px 41px;
     margin-bottom: 30px;
+    padding: 0px 39px 0px 41px;
+
+    @include tablet {
+      padding: 0 11px;
+    }
+    @include desktop {
+      font-size: 16px;
+      padding: 0 44px;
+    }
   }
 }
