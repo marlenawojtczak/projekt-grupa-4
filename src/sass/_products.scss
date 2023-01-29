@@ -60,8 +60,7 @@
     gap: 17px;
     @include tablet {
       width: 220px;
-      height: 485px;
-      padding: 0 14px;
+      padding-bottom: 40px;
     }
     @include desktop {
       width: 329px;
@@ -88,19 +87,9 @@
   &__img {
     display: flex;
     position: absolute;
-    width: 249px;
-    height: 252px;
     margin: 0 auto;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include tablet {
-      width: 220px;
-      height: 226px;
-    }
-    @include desktop {
-      width: 335px;
-      height: 335px;
-    }
   }
 
   &__title {
@@ -117,7 +106,6 @@
     padding-bottom: 30px;
     @include tablet {
       font-size: 23px;
-      padding-top: 140px;
     }
   }
 
@@ -147,10 +135,11 @@
     letter-spacing: 0.04em;
     line-height: 1.52em;
     color: $primaryColor;
-    padding: 0px 39px 0px 41px;
     margin-bottom: 30px;
+    padding: 0px 39px 0px 41px;
+
     @include tablet {
-      padding: 0px 11px 0px 11px;
+      padding: 0 11px;
     }
   }
 }
