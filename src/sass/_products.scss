@@ -1,4 +1,15 @@
 .products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @include tablet {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @include desktop {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+
   &__box {
     display: flex;
     flex-direction: column;
@@ -43,7 +54,6 @@
     text-align: center;
     text-transform: uppercase;
     color: $redColor;
-    margin-bottom: 144px;
     @include tablet {
       font-size: 48px;
     }
@@ -58,12 +68,14 @@
     padding-bottom: 41px;
     margin: 0 auto;
     gap: 17px;
+    margin-top: 144px;
     @include tablet {
       width: 220px;
       padding-bottom: 40px;
     }
     @include desktop {
       width: 329px;
+      margin-top: 259px;
     }
 
     &--cream-bg {
@@ -81,7 +93,6 @@
 
   &__wrap {
     position: relative;
-    padding-bottom: 135px;
   }
 
   &__img {
@@ -118,7 +129,7 @@
     @include desktop {
       font-size: 30px;
       padding-bottom: 32px;
-      padding-top: 200px;
+      padding-top: 193px;
     }
   }
 
