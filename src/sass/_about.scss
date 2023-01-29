@@ -52,11 +52,17 @@
 
 .milk-background {
   background-image: url('../images/about/about-bg-mobile@2x.png');
-  background-size: 90vw;
-  background-position: center;
+  background-size: 100vw;
+  background-position: bottom;
   background-repeat: no-repeat;
   @include tablet {
     background: none;
+  }
+  @include desktop {
+    background-image: url('../images/about/about-bg-desktop@2x.png');
+    background-size: 100%;
+    background-position: 100% 130%;
+    background-repeat: no-repeat;
   }
 }
 .about-cow {
@@ -65,6 +71,12 @@
   padding-bottom: 46px;
   justify-content: center;
   @include tablet {
+    padding: 0px;
+    max-height: 339px;
+  }
+  @include desktop {
+    padding: 0px;
+    max-height: 516px;
   }
 }
 
@@ -73,9 +85,14 @@
   display: flex;
   flex-direction: column;
   font-family: $font-dm-sans;
-  gap: 45px;
+  gap: 47px;
   @include tablet {
     padding: 50px 0px 62px 0px;
+    gap: 49px;
+  }
+  @include desktop {
+    padding: 51px 0px 45px 0px;
+    gap: 35px;
   }
   &__black {
     font-weight: 500;
@@ -86,6 +103,11 @@
     @include tablet {
       font-size: 14px;
       line-height: 1.76;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
     }
   }
   &__grey {
@@ -98,6 +120,9 @@
       font-size: 14px;
       line-height: 1.76;
       letter-spacing: 0.04em;
+    }
+    @include desktop {
+      line-height: 1.94;
     }
   }
 }
@@ -137,7 +162,8 @@
   }
   @include desktop {
     display: flex;
-    padding: 0px 113px;
-    margin: 0;
+    padding: 0px 93px;
+    margin: 0px auto;
+    gap: 74px;
   }
 }
