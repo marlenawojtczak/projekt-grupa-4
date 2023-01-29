@@ -3,7 +3,7 @@
   margin: 0px;
 }
 body {
-  font-family: $font-titan;
+  font-family: $font-dm-sans;
   color: $primaryColor;
 }
 .container {
@@ -11,10 +11,10 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 
+
   @include tablet {
     max-width: 768px;
   }
-
   @include desktop {
     max-width: 1280px;
   }

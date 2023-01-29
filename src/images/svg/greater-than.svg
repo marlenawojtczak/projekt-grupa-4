@@ -1,3 +1,1 @@
-<svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<symbol id="icon-greater-than" viewBox="0 0 26 32"><path fill="none" stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8" style="stroke:var(--color1, #D41443)"/></symbol>
