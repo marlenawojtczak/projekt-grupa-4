@@ -53,7 +53,7 @@
   }
 
   &__wrapper {
-    max-width: 280px;
+    width: 280px;
     border-radius: 24px;
     padding-bottom: 41px;
     margin: 0 auto;
@@ -81,15 +81,23 @@
 
   &__wrap {
     position: relative;
-    margin-bottom: 135px;
+    padding-bottom: 135px;
   }
 
   &__img {
     display: flex;
     position: absolute;
-    margin: 0 auto;
+    width: 249px;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include tablet {
+      width: 220px;
+    }
+
+    @include desktop {
+      width: 335px;
+    }
   }
 
   &__title {
@@ -107,6 +115,11 @@
     @include tablet {
       font-size: 23px;
     }
+    @include desktop {
+      font-size: 30px;
+      padding-bottom: 32px;
+      padding-top: 200px;
+    }
   }
 
   &__list-dot {
@@ -114,7 +127,11 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    @include desktop {
+      padding-bottom: 30px;
+    }
   }
 
   &__item-dot::after {
@@ -140,6 +157,10 @@
 
     @include tablet {
       padding: 0 11px;
+    }
+    @include desktop {
+      font-size: 16px;
+      padding: 0 44px;
     }
   }
 }
