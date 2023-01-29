@@ -4,53 +4,27 @@
         display: flex;
         flex-direction: column;
         gap: 46px;
-        @include tablet {
-          flex-direction: row;
-          justify-content: space-between;
-        }
     }
     &__text {
         text-align: left;
         max-width: 240px;
-        @include tablet {
-          margin-bottom: 90px;
-          max-width: 340px;
-      }
-      @include desktop {
-        margin-bottom: 97px;
-        max-width: 100%;
-      }
         &--small {
+            font-family: $font-titan;
             color: $iceColor;
             text-transform: uppercase;
             font-style:normal;
             font-size: 18px;
             font-weight: 400;
             margin-bottom: 17px;
-            @include tablet {
-              font-size: 26px;
-              line-height: 1.15;
-              letter-spacing: 0.04em;
-            }
-            @include desktop {
-              font-size: 30px;
-            }
         }
         &--big {
+            font-family: $font-titan;
             color: $buttonFirstColor;
             text-transform: uppercase;
             font-style:normal;
             font-size: 34px;
             font-weight: 400;
             letter-spacing: 0.04em;
-            @include tablet {
-              font-size: 48px;
-              line-height: 1.15;
-              letter-spacing: 0.06em;
-            }
-            @include desktop {
-              font-size: 58px;
-            }
         }
     }
     &__contact {
@@ -61,7 +35,7 @@
     &__social {
         display: flex;
   gap: 28px;
-  justify-content: flex-end;
+ justify-content: flex-end;
     }
     &__social-item {
         background-color: #FEA5BB;
@@ -81,12 +55,6 @@
         display: flex;
         gap: 3px;
         margin: 46px 0 40px;
-        @include tablet {
-          margin: 46px 0 0 0;
-        }
-        @include desktop {
-          margin: 50px 0 0 0;
-        }
     }
     &__feel-item {
         font-family: $font-dm-sans;
@@ -94,13 +62,6 @@
         color: $firstFontColor;
         font-weight: 700;
         line-height: 1.86;
-        @include tablet {
-          font-size: 14px;
-        }
-        @include desktop {
-          font-size: 16px;
-          letter-spacing: 0.02em;
-        }
     }
     &__phone-item {
         font-family: $font-dm-sans;
@@ -109,13 +70,6 @@
         font-weight: 500;
         line-height: 1.86;
         text-decoration: none;
-        @include tablet {
-          font-size: 14px;
-        }
-        @include desktop {
-          font-size: 16px;
-          letter-spacing: 0.02em;
-        }
     }
     &__ending {
         border-top: 1px solid #E1E1E1;
@@ -123,12 +77,6 @@
         justify-content: center;
         background-color: $tertiaryColor;
         margin: 0 -20px;
-        @include tablet {
-          margin: 0 -36px;
-        }
-        @include desktop {
-          margin: 0 -115px;
-        }
     }
     &__copyright {
         font-family: $font-dm-sans;
@@ -138,16 +86,6 @@
         font-style: bold;
         line-height: 1.52;
         margin: 21px 0 32px;
-        @include tablet {
-          margin: 29px 0 40px;
-          letter-spacing: 0.02em;
-      }
-      @include desktop {
-        margin: 9px 0 10px;
-    }
         max-width: 144px;
-        @include tablet {
-            max-width: 100%;
-        }
     }
-  }
+}
