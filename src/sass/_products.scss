@@ -13,6 +13,7 @@
   &__box {
     display: flex;
     flex-direction: column;
+    gap: 17px;
 
     @include tablet {
       display: flex;
@@ -67,7 +68,6 @@
     border-radius: 24px;
     padding-bottom: 41px;
     margin: 0 auto;
-    gap: 17px;
     margin-top: 144px;
     @include tablet {
       width: 220px;
