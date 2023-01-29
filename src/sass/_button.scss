@@ -14,8 +14,8 @@
   border: none;
   justify-content: center;
   transition: background-color $transitionDurationDefault $transitionTimingDefault;
-  &:hover,
-  &:focus {
+  &:not(.nohover):hover,
+  &:not(.nohover):focus {
     background-color: $buttonSecondColor;
   }
   &--opposite-color {
@@ -73,8 +73,13 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    background-color: $buttonFirstColor;
+    &-locations {
+      background-color: $buttonFirstColor;
+      fill: $primaryColor;
+      color: $primaryColor;
+    }
   }
+
   &--socials {
     width: 32px;
     height: 32px;
@@ -108,9 +113,9 @@
       line-height: 21px;
     }
     &--contacts {
-      width: 191px;
-      &-franchise {
-        width: 174px;
+      width: 174px;
+      &-locations {
+        width: 191px;
       }
     }
     &--socials {
@@ -133,9 +138,9 @@
       display: none;
     }
     &--contacts {
-      width: 198px;
-      &-franchise {
-        width: 180px;
+      width: 180px;
+      &-locations {
+        width: 198px;
       }
     }
   }
