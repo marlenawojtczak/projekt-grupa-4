@@ -21,10 +21,10 @@
       max-width: 100%;
     }
       &--small {
-        font-family: $font-titan;
           color: $iceColor;
           text-transform: uppercase;
           font-style:normal;
+          font-family: $font-titan;
           font-size: 18px;
           font-weight: 400;
           margin-bottom: 17px;
@@ -38,12 +38,12 @@
           }
       }
       &--big {
-        font-family: $font-titan;
           color: $buttonFirstColor;
           text-transform: uppercase;
           font-style:normal;
           font-size: 34px;
           font-weight: 400;
+          font-family: $font-titan;
           letter-spacing: 0.04em;
           @include tablet {
             font-size: 48px;
