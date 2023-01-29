@@ -1,8 +1,19 @@
 .products {
-  display: flex;
-  flex-direction: column;
-  margin-top: 121px;
-  margin-bottom: -54px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    @include desktop {
+      gap: 30px;
+    }
+  }
 
   &__description-title {
     font-family: 'Titan One', cursive;
@@ -46,14 +57,14 @@
     border-radius: 24px;
     padding-bottom: 41px;
     margin: 0 auto;
-    margin-bottom: 17px;
     gap: 17px;
     @include tablet {
-      max-width: 220px;
+      width: 220px;
+      height: 485px;
+      padding: 0 14px;
     }
-
     @include desktop {
-      max-width: 329px;
+      width: 329px;
     }
 
     &--cream-bg {
@@ -82,6 +93,14 @@
     margin: 0 auto;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include tablet {
+      width: 220px;
+      height: 226px;
+    }
+    @include desktop {
+      width: 335px;
+      height: 335px;
+    }
   }
 
   &__title {
@@ -95,7 +114,11 @@
     text-transform: uppercase;
     color: $primaryColor;
     padding-top: 160px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    @include tablet {
+      font-size: 23px;
+      padding-top: 140px;
+    }
   }
 
   &__list-dot {
@@ -126,5 +149,8 @@
     color: $primaryColor;
     padding: 0px 39px 0px 41px;
     margin-bottom: 30px;
+    @include tablet {
+      padding: 0px 11px 0px 11px;
+    }
   }
 }
