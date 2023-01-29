@@ -137,12 +137,15 @@
   justify-content: center;
   cursor: pointer;
   color: $redColor;
-  background: $primaryColor;
+  background-color: $primaryColor;
   border-radius: 22px;
   border: none;
   margin: 0 auto;
   width: 176px;
   height: 44px;
+  &:hover {
+    background-color: $buttonSecondColor;
+  }
   @include tablet {
     margin: 0px;
   }
