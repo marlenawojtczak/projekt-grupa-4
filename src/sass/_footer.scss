@@ -1,11 +1,11 @@
 .footer {
   background-color: $tertiaryColor;
-  background-image: url('../images/footer-line-mobile@2x.png');
+  background-image: url('../images/footer/footer-line-mobile@2x.png');
   @include tablet{
-    background-image: url('../images/footer-line-tablet@2x.png');
+    background-image: url('../images/footer/footer-line-tablet@2x.png');
   }
   @include desktop {
-    background-image: url('../images/footer-line-desktop@2x.png');
+    background-image: url('../images/footer/footer-line-desktop@2x.png');
   }
   background-size: 100vw;
   background-position: bottom 95px right 0px;
