@@ -1,14 +1,45 @@
 .advantages {
-  display: grid;
   background-color: $tertiaryColor;
-  width: 100%;
-
+  padding: 39px 50px 97px 0;
+  @include tablet {
+    padding: 66px 76px 140px 16px;
+  }
+  @include desktop {
+    padding: 39px 0 139px 0;
+  }
   &__header {
     display: none;
   }
   &__list {
     list-style: none;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+    }
+    @include desktop {
+      gap: 30px;
+    }
+  }
+  &__element {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include desktop {
+      gap: 15px;
+    }
+  }
+  &__img {
+    width: fit-content;
+    @include tablet {
+      padding-bottom: 20px;
+    }
+    @include desktop {
+      padding-bottom: 25px;
+    }
   }
   &__number {
     color: $redColor;
@@ -16,12 +47,28 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 1.145;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      font-size: 58px;
+    }
   }
-  &__article {
+  &__text {
     color: $firstFontColor;
     font-family: $font-dm-sans;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.7;
+    letter-spacing: 0.02em;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+      min-width: 330px;
+    }
   }
 }
