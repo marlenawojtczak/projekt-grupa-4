@@ -1,14 +1,5 @@
 .footer {
   background-color: $tertiaryColor;
-  background-image: url('../images/footer/footer-line-desktop@2x.png');
-  background-size: 100vw;
-  background-position: bottom 99px center;
-  @include tablet {
-  background-position: bottom 91px center;}
-  @include desktop {
-    background-position: bottom 45px center;
-  }
-  background-repeat: no-repeat;
   &__container {
       display: flex;
       flex-direction: column;
@@ -142,6 +133,11 @@ justify-content: flex-end;
       display: flex;
       justify-content: center;
       background-color: $tertiaryColor;
+      border-top: 1px solid $quoteColor;
+      width: 100vw;
+      position: fixed;
+      left: 0;
+      top: auto;
   }
   &__copyright {
       font-family: $font-dm-sans;
@@ -152,7 +148,7 @@ justify-content: flex-end;
       line-height: 1.52;
       margin: 21px 0 32px;
       @include tablet {
-        margin: 29px 0 40px;
+        margin: 29px 0 18px;
         letter-spacing: 0.02em;
     }
     @include desktop {
