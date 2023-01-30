@@ -1,11 +1,11 @@
 .footer {
   background-color: $tertiaryColor;
-  background-image: url('../images/footer/footer-line-mobile@2x.png');
+  background-image: url('../images/footer-line-mobile@2x.png');
   @include tablet{
-    background-image: url('../images/footer/footer-line-tablet@2x.png');
+    background-image: url('../images/footer-line-tablet@2x.png');
   }
   @include desktop {
-    background-image: url('../images/footer/footer-line-desktop@2x.png');
+    background-image: url('../images/footer-line-desktop@2x.png');
   }
   background-size: 100vw;
   background-position: bottom 95px right 0px;
@@ -78,6 +78,12 @@
   &__social {
       display: flex;
 gap: 28px;
+@include tablet {
+  gap: 30px;
+}
+@include desktop {
+  gap: 24px;
+}
 justify-content: flex-end;
   }
   &__social-item {
@@ -92,6 +98,10 @@ justify-content: flex-end;
       &:hover,
       &:focus {
         background-color: $buttonFirstColor;
+      }
+      @include tablet {
+        width: 34px;
+        height: 34px;
       }
     }
   &__invitation {
