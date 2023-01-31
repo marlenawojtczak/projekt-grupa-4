@@ -1,91 +1,172 @@
 .footer {
-    background-color: $tertiaryColor;
-    &__container {
-        display: flex;
-        flex-direction: column;
-        gap: 46px;
-    }
-    &__text {
-        text-align: left;
-        max-width: 240px;
-        &--small {
-            font-family: $font-titan;
-            color: $iceColor;
-            text-transform: uppercase;
-            font-style:normal;
-            font-size: 18px;
-            font-weight: 400;
-            margin-bottom: 17px;
-        }
-        &--big {
-            font-family: $font-titan;
-            color: $buttonFirstColor;
-            text-transform: uppercase;
-            font-style:normal;
-            font-size: 34px;
-            font-weight: 400;
-            letter-spacing: 0.04em;
-        }
-    }
-    &__contact {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    &__social {
-        display: flex;
-  gap: 28px;
- justify-content: flex-end;
-    }
-    &__social-item {
-        background-color: #FEA5BB;
-        fill: $primaryColor;
-      border-radius: 50%;
-      font-size: 0px;
+  background-color: $tertiaryColor;
+  background-image: url('../images/footer/footer-line-mobile@2x.png');
+  @include tablet{
+    background-image: url('../images/footer/footer-line-tablet@2x.png');
+  }
+  @include desktop {
+    background-image: url('../images/footer/footer-line-desktop@2x.png');
+  }
+  background-size: 100vw;
+  background-position: bottom 95px right 0px;
+  @include tablet {
+  background-position: bottom 90px right 0px;}
+  @include desktop {
+    background-position: bottom 45px right 0px;
+  }
+  background-repeat: no-repeat;
+  &__container {
       display: flex;
-        transition-property: background-color;
-        transition-duration: $transitionDurationDefault;
-        transition-timing-function: $transitionTimingDefault;
-        &:hover,
-        &:focus {
-          background-color: $buttonFirstColor;
-        }
+      flex-direction: column;
+      gap: 46px;
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
       }
-    &__invitation {
-        display: flex;
-        gap: 3px;
-        margin: 46px 0 40px;
+  }
+  &__text {
+      text-align: left;
+      max-width: 240px;
+      @include tablet {
+        margin-bottom: 90px;
+        max-width: 340px;
     }
-    &__feel-item {
-        font-family: $font-dm-sans;
-        font-size: 12px;
-        color: $firstFontColor;
-        font-weight: 700;
-        line-height: 1.86;
+    @include desktop {
+      margin-bottom: 97px;
+      max-width: 100%;
     }
-    &__phone-item {
-        font-family: $font-dm-sans;
-        font-size: 12px;
-        color: $buttonFirstColor;
-        font-weight: 500;
-        line-height: 1.86;
-        text-decoration: none;
+      &--small {
+        font-family: $font-titan;
+          color: $iceColor;
+          text-transform: uppercase;
+          font-style:normal;
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 17px;
+          @include tablet {
+            font-size: 26px;
+            line-height: 1.15;
+            letter-spacing: 0.04em;
+          }
+          @include desktop {
+            font-size: 30px;
+          }
+      }
+      &--big {
+        font-family: $font-titan;
+          color: $buttonFirstColor;
+          text-transform: uppercase;
+          font-style:normal;
+          font-size: 34px;
+          font-weight: 400;
+          letter-spacing: 0.04em;
+          @include tablet {
+            font-size: 48px;
+            line-height: 1.15;
+            letter-spacing: 0.06em;
+          }
+          @include desktop {
+            font-size: 58px;
+          }
+      }
+  }
+  &__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  }
+  &__social {
+      display: flex;
+gap: 28px;
+@include tablet {
+  gap: 30px;
+}
+@include desktop {
+  gap: 24px;
+}
+justify-content: flex-end;
+  }
+  &__social-item {
+      background-color: #FEA5BB;
+      fill: $primaryColor;
+    border-radius: 50%;
+    font-size: 0px;
+    display: flex;
+      transition-property: background-color;
+      transition-duration: $transitionDurationDefault;
+      transition-timing-function: $transitionTimingDefault;
+      &:hover,
+      &:focus {
+        background-color: $buttonFirstColor;
+      }
+      @include tablet {
+        width: 34px;
+        height: 34px;
+      }
     }
-    &__ending {
-        border-top: 1px solid #E1E1E1;
-        display: flex;
-        justify-content: center;
-        background-color: $tertiaryColor;
-        margin: 0 -20px;
-    }
-    &__copyright {
-        font-family: $font-dm-sans;
-        color: $secondFontColor;
+  &__invitation {
+      display: flex;
+      gap: 3px;
+      margin: 46px 0 40px;
+      @include tablet {
+        margin: 46px 0 0 0;
+      }
+      @include desktop {
+        margin: 50px 0 0 0;
+      }
+  }
+  &__feel-item {
+      font-family: $font-dm-sans;
+      font-size: 12px;
+      color: $firstFontColor;
+      font-weight: 700;
+      line-height: 1.86;
+      @include tablet {
         font-size: 14px;
-        font-weight: 700;
-        font-style: bold;
-        line-height: 1.52;
-        margin: 21px 0 32px;
-        max-width: 144px;
+      }
+      @include desktop {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+  }
+  &__phone-item {
+      font-family: $font-dm-sans;
+      font-size: 12px;
+      color: $buttonFirstColor;
+      font-weight: 500;
+      line-height: 1.86;
+      text-decoration: none;
+      @include tablet {
+        font-size: 14px;
+      }
+      @include desktop {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+  }
+  &__ending {
+      display: flex;
+      justify-content: center;
+      background-color: $tertiaryColor;
+  }
+  &__copyright {
+      font-family: $font-dm-sans;
+      color: $secondFontColor;
+      font-size: 14px;
+      font-weight: 700;
+      font-style: bold;
+      line-height: 1.52;
+      margin: 21px 0 32px;
+      @include tablet {
+        margin: 29px 0 40px;
+        letter-spacing: 0.02em;
     }
+    @include desktop {
+      margin: 9px 0 10px;
+  }
+      max-width: 144px;
+      @include tablet {
+          max-width: 100%;
+      }
+  }
 }
