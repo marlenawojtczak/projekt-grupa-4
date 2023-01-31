@@ -20,14 +20,18 @@
   @include tablet {
     padding-bottom: 66px;
   }
+  @include desktop {
+    padding-bottom: 39px;
+  }
 }
 .about {
   &__title {
     display: flex;
     flex-direction: column;
-    padding: 130px 40px 26px 40px;
+    padding: 125px 40px 26px 40px;
     font-family: $font-titan;
     gap: 15px;
+
     @include tablet {
       padding-bottom: 50px;
     }
@@ -38,11 +42,9 @@
   }
 
   &__title-text {
-    font-size: 18px;
-    line-height: 1.66;
     text-align: center;
     text-transform: uppercase;
-    color: $iceColor;
+    @include text(400, 18px, 1.66, $iceColor, $font-titan);
     @include tablet {
       font-size: 26px;
       line-height: 1.153;
@@ -54,12 +56,11 @@
     }
   }
   &__title-header {
-    font-size: 34px;
-    line-height: 1.147;
-    text-align: center;
+    @include text(400, 34px, 1.147, $redColor, $font-titan);
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
-    color: $redColor;
+
     @include tablet {
       font-size: 48px;
       line-height: 1.145;
@@ -74,12 +75,12 @@
     @include tablet {
       display: flex;
       gap: 17px;
-      padding: 0px 34px;
+      padding: 0px;
       margin: 0 auto;
     }
     @include desktop {
       display: flex;
-      padding: 0px 93px;
+      padding: 0px;
       margin: 0px auto;
       gap: 74px;
     }
@@ -113,10 +114,7 @@
       gap: 35px;
     }
     &--black {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.62;
-      color: $firstFontColor;
+      @include text(500, 12px, 1.62, $firstFontColor, $font-dm-sans);
       text-align: left;
       @include tablet {
         font-size: 14px;
@@ -129,11 +127,7 @@
       }
     }
     &--grey {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.62;
-      color: $secondFontColor;
-
+      @include text(500, 12px, 1.62, $secondFontColor, $font-dm-sans);
       @include tablet {
         font-size: 14px;
         line-height: 1.76;
