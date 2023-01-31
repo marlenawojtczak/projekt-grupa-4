@@ -1,120 +1,171 @@
+.milk-background {
+  background-image: url('../images/about/about-bg-mobile@2x.png');
+  background-size: 100%;
+  background-position: 100% 95%;
+  background-repeat: no-repeat;
+  @include tablet {
+    background: none;
+  }
+  @include desktop {
+    background-image: url('../images/about/about-bg-desktop@2x.png');
+    background-size: 100%;
+    background-position: 100% 130%;
+    background-repeat: no-repeat;
+  }
+}
 .about-wrapper {
   background: $tertiaryColor;
   padding-bottom: 39px;
   margin: 0px;
 }
+.about {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    padding: 125px 40px 26px 40px;
+    font-family: $font-titan;
+    gap: 15px;
+    @include tablet {
+      padding-bottom: 50px;
+    }
+    @include desktop {
+      padding-bottom: 55px;
+    }
+  }
 
-.about-title {
-  display: flex;
-  flex-direction: column;
-  padding: 125px 40px 26px 40px;
-  font-family: $font-titan;
-
-  &__text {
+  &__title-text {
     font-size: 18px;
     line-height: 1.66;
     text-align: center;
     text-transform: uppercase;
     color: $iceColor;
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.153;
+    }
+    @include desktop {
+      font-size: 30px;
+      line-height: 1.133;
+      letter-spacing: 0.04em;
+    }
   }
-  &__header {
+  &__title-header {
     font-size: 34px;
     line-height: 1.147;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $redColor;
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.145;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.137;
+      letter-spacing: 0.06em;
+    }
   }
-}
-
-.milk-background {
-  background-image: url('../images/about/about-bg-mobile@2x.png');
-  background-size: 100vw;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-.about-cow {
-  display: flex;
-  margin: 0px auto;
-  padding-bottom: 46px;
-  justify-content: center;
-}
-
-.about-text {
-  padding: 0px 30px 17px 30px;
-  display: flex;
-  flex-direction: column;
-  font-family: $font-dm-sans;
-  gap: 45px;
-  &__black {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 162%;
-    color: $firstFontColor;
-    text-align: left;
+  &__cow-container {
+    @include tablet {
+      display: flex;
+      gap: 17px;
+      padding: 0px 34px;
+      margin: 0 auto;
+    }
+    @include desktop {
+      display: flex;
+      padding: 0px 93px;
+      margin: 0px auto;
+      gap: 74px;
+    }
   }
-  &__grey {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 162%;
-    color: $secondFontColor;
-  }
-}
-
-.about-button {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.285;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  cursor: pointer;
-  color: $redColor;
-  background: $primaryColor;
-  border-radius: 22px;
-  border: none;
-  margin: 0 auto;
-  width: 176px;
-  height: 44px;
-  &__svg {
-    fill: $redColor;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
-}
-
-.about-info {
-  padding: 39px 50px 106px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-  &__element {
+  &__cow-img {
     display: flex;
-    gap: 12px;
+    margin: 0px auto;
+    padding-bottom: 46px;
+    justify-content: center;
+    @include tablet {
+      padding: 0px;
+      max-height: 339px;
+    }
+    @include desktop {
+      padding: 0px;
+      max-height: 516px;
+    }
+  }
+  &__cow-text {
+    padding: 0px 30px 17px 30px;
+    display: flex;
     flex-direction: column;
-  }
-  &__img {
-    width: fit-content;
-  }
-  &__numbers {
-    font-size: 36px;
-    line-height: 1.138;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $redColor;
-    font-family: $font-titan;
-  }
-  &__text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    color: $firstFontColor;
     font-family: $font-dm-sans;
+    gap: 47px;
+    @include tablet {
+      padding: 50px 0px 62px 0px;
+      gap: 49px;
+    }
+    @include desktop {
+      padding: 51px 0px 45px 0px;
+      gap: 35px;
+    }
+    &--black {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.62;
+      color: $firstFontColor;
+      text-align: left;
+      @include tablet {
+        font-size: 14px;
+        line-height: 1.76;
+      }
+      @include desktop {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+      }
+    }
+    &--grey {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.62;
+      color: $secondFontColor;
+
+      @include tablet {
+        font-size: 14px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+      }
+      @include desktop {
+        line-height: 1.94;
+      }
+    }
+  }
+  &__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.285;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $redColor;
+    background-color: $primaryColor;
+    border-radius: 22px;
+    border: none;
+    margin: 0 auto;
+    width: 176px;
+    height: 44px;
+    &:hover {
+      background-color: $buttonSecondColor;
+    }
+    @include tablet {
+      margin: 0px;
+    }
+  }
+  &__button-svg {
+    fill: none;
+    stroke: $redColor;
+    margin-left: 8px;
   }
 }

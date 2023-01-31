@@ -1,6 +1,8 @@
 * {
   padding: 0px;
   margin: 0px;
+  text-decoration: none;
+  list-style: none;
 }
 body {
   font-family: $font-dm-sans;
@@ -10,6 +12,15 @@ body {
   max-width: 480px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 34px;
+  }
+  @include desktop {
+    max-width: 1280px;
+    padding: 0 112px;
+  }
 }
 svg {
   vertical-align: middle;

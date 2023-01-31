@@ -113,3 +113,9 @@ dist
 
 # package-lock.json
 .package-lock.json
+
+# css
+*.css
+
+# css.map
+*.css.map
