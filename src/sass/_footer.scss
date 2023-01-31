@@ -1,17 +1,18 @@
 .footer {
   background-color: $tertiaryColor;
-  background-image: url('../images/footer/footer-line-mobile.png');
-  @include tablet {
-    background-image: url('../images/footer/footer-line-tablet.png');
+  background-image: url('../images/footer/footer-line-mobile@2x.png');
+  @include tablet{
+    background-image: url('../images/footer/footer-line-tablet@2x.png');
   }
   @include desktop {
-  background-image: url('../images/footer/footer-line-desktop.png');}
+    background-image: url('../images/footer/footer-line-desktop@2x.png');
+  }
   background-size: 100vw;
-  background-position: bottom 99px center;
+  background-position: bottom 95px right 0px;
   @include tablet {
-  background-position: bottom 90px center;}
+  background-position: bottom 90px right 0px;}
   @include desktop {
-    background-position: bottom 45px center;
+    background-position: bottom 45px right 0px;
   }
   background-repeat: no-repeat;
   &__container {
