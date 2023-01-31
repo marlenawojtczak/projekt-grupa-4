@@ -1,44 +1,25 @@
-<!DOCTYPE html>
-<html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <header> HEADER
-      <button class="menu__toggle js-open-menu">
-        <svg width="20" height="12" class="menu__button">
-          <use href="./images/icons.svg#icon-Burger"></use>
+<div class="menu js-menu-container">
+  <button class="menu__toggle js-close-menu">
+    <svg class="menu__close" width="14" height="14">
+      <use href="images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="menu__container">
+    <div class="menu__buy">
+      <button type="submit" class="button button--buy-bt">
+        <span class="menu__buy-txt">Buy now</span>
+        <svg width="7.3" height="10">
+          <use href="images/icons.svg#icon-greater-than"></use>
         </svg>
       </button>
-    </header>
-    <main>MAIN</main>
-    <footer >FOOTER </footer>
-    <div class="menu js-menu-container">
-      <button class="menu__toggle js-close-menu">
-        <svg class="menu__close" width="14" height="14">
-          <use href="images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div class="menu__container">
-        <div class="menu__buy">
-          <button type="submit" class="menu__buy-bt">
-            <span class="menu__buy-txt">Buy now</span>
-            <svg width="5.3" height="8">
-              <use href="images/icons.svg#icon-greater-than"></use>
-            </svg>
-          </button></div>
-        <div class="menu__nav">
-          <div class="menu__item"><a href="index.html" class="menu__link">Home</a></div>
-          <div class="menu__item"><a href="#" class="menu__link">About Us</a></div>
-          <div class="menu__item"><a href="#" class="menu__link">How It's made?</a></div>
-          <div class="menu__item"><a href="#" class="menu__link">Contact</a></div>
-          <div class="menu__item"><a href="#" class="menu__link">Our products</a></div>
-          <div class="menu__item menu__item--last"><a href="#" class="menu__link">Contact</a></div>
-        </div>
-      </div>
     </div>
-    <script defer src="./mobile-menu.js"></script>
-  </body>
-</html>
+    <ul class="menu__nav">
+      <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">How It's made?</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Our products</a></li>
+      <li class="menu__item menu__item--last"><a href="#" class="menu__link">Contact</a></li>
+    </ul>
+  </div>
+</div>

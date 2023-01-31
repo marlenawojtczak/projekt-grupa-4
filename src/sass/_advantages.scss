@@ -1,8 +1,8 @@
 .advantages {
   background-color: $tertiaryColor;
-  padding: 39px 50px 97px 0;
+  padding-bottom: 97px;
   @include tablet {
-    padding: 66px 76px 140px 16px;
+    // padding: 66px 76px 140px 16px;
   }
   @include desktop {
     padding: 39px 0 139px 0;
