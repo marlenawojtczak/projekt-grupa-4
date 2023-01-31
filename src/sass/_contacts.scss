@@ -68,9 +68,7 @@
     background-color: $coffeeColor;
     text-transform: uppercase;
     border-radius: 4px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+    @include text(500, 12px, 1.86, $primaryColor, $font-dm-sans);
     letter-spacing: 0.04em;
     &--foodtruck {
       background-color: $milkshakeColor;
