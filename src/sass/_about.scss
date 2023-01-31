@@ -17,12 +17,15 @@
   background: $tertiaryColor;
   padding-bottom: 39px;
   margin: 0px;
+  @include tablet {
+    padding-bottom: 66px;
+  }
 }
 .about {
   &__title {
     display: flex;
     flex-direction: column;
-    padding: 125px 40px 26px 40px;
+    padding: 130px 40px 26px 40px;
     font-family: $font-titan;
     gap: 15px;
     @include tablet {
@@ -30,6 +33,7 @@
     }
     @include desktop {
       padding-bottom: 55px;
+      padding-top: 125px;
     }
   }
 

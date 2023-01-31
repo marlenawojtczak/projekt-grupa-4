@@ -1,5 +1,9 @@
 .contacts {
   background-color: $tertiaryColor;
+  padding-bottom: 113px;
+  @include tablet {
+    padding-bottom: 165px;
+  }
   &__title {
     display: none;
   }
@@ -8,6 +12,14 @@
     flex-direction: column;
     list-style: none;
     gap: 20px;
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+    @include desktop {
+      gap: 30px;
+    }
   }
   &__element {
     width: 220px;
@@ -16,6 +28,14 @@
     background-color: $primaryColor;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    @include tablet {
+      margin: 0;
+      padding: 50px 31px;
+    }
+    @include desktop {
+      width: 330px;
+      padding: 51px 44px 62px 43px;
+    }
   }
   &__section {
     display: flex;
@@ -23,7 +43,22 @@
     padding: 25px 0;
     border-bottom: 1px solid $quoteColor;
     gap: 10px;
+    @include tablet {
+      padding: 30px 0;
+      gap: 14px;
+      &:nth-of-type(2) {
+        gap: 16px;
+      }
+    }
+    @include desktop {
+      padding: 32px 0;
+      gap: 10px;
+      &:nth-of-type(2) {
+        gap: 15px;
+      }
+    }
   }
+
   &__unit-type {
     display: flex;
     justify-content: center;
@@ -40,6 +75,26 @@
     &--foodtruck {
       background-color: $milkshakeColor;
       width: 130px;
+      @include tablet {
+        width: 138px;
+      }
+      @include desktop {
+        width: 138px;
+      }
+    }
+    @include tablet {
+      width: 73px;
+      height: 28px;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 1.86;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      width: 73px;
+      height: 28px;
+      border-radius: 6px;
+      font-size: 16px;
     }
   }
   &__text {
@@ -51,15 +106,35 @@
       color: $iceColor;
       margin-top: -2px;
     }
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
   }
   &__description {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     color: $secondFontColor;
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.83;
+    }
   }
   &__contact-details {
     margin-top: 25px;
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include desktop {
+      margin-top: 32px;
+    }
   }
   &__link {
     text-decoration: none;
@@ -67,6 +142,14 @@
     font-size: 12px;
     line-height: 18px;
     color: $secondFontColor;
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.83;
+    }
   }
   &__buttons-container {
     display: flex;
@@ -74,11 +157,22 @@
     margin-top: 54px;
     gap: 10px;
     align-items: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 81px;
+      gap: 14.5px;
+    }
+    @include desktop {
+      margin-top: 86px;
+      gap: 15px;
+    }
   }
 }
-
+/*
 @include tablet {
   .contacts {
+    padding-bottom: 165px;
     &-grid {
       flex-direction: row;
       justify-content: center;
@@ -128,6 +222,7 @@
     }
   }
 }
+
 @include desktop {
   .contacts {
     &-grid {
@@ -173,3 +268,4 @@
     }
   }
 }
+*/
