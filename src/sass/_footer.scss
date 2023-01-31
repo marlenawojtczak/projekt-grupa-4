@@ -1,6 +1,12 @@
 .footer {
   background-color: $tertiaryColor;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='100vw' height='5' viewBox='0 0 100vw 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_80188_19)'%3E%3Cpath d='M0 1H1280' stroke='%23E1E1E1'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_80188_19' x='-4' y='0.5' width='100vw' height='5' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_80188_19'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_80188_19' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+  background-image: url('../images/footer/footer-line-mobile@2x.png');
+  @include tablet{
+    background-image: url('../images/footer/footer-line-tablet@2x.png');
+  }
+  @include desktop {
+    background-image: url('../images/footer/footer-line-desktop@2x.png');
+  }
   background-size: 100vw;
   background-position: bottom 95px right 0px;
   @include tablet {
