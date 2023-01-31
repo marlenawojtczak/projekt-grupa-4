@@ -12,3 +12,13 @@ $desktop: 1280px;
     @content;
   }
 }
+
+//fonts
+
+@mixin text ($weight, $size, $line, $color, $family)  {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+  color: $color;
+  font-family: $family;
+}
