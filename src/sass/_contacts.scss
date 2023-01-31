@@ -83,7 +83,6 @@
       }
     }
     @include tablet {
-      width: 73px;
       height: 28px;
       border-radius: 6px;
       font-size: 16px;
@@ -91,7 +90,6 @@
       letter-spacing: 0.04em;
     }
     @include desktop {
-      width: 73px;
       height: 28px;
       border-radius: 6px;
       font-size: 16px;
