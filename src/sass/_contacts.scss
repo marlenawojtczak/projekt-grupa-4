@@ -2,7 +2,7 @@
   background-color: $tertiaryColor;
   padding-bottom: 113px;
   @include tablet {
-    padding-bottom: 165px;
+    padding-bottom: 158px;
   }
   &__title {
     display: none;
@@ -83,7 +83,6 @@
       }
     }
     @include tablet {
-      width: 73px;
       height: 28px;
       border-radius: 6px;
       font-size: 16px;
@@ -91,7 +90,6 @@
       letter-spacing: 0.04em;
     }
     @include desktop {
-      width: 73px;
       height: 28px;
       border-radius: 6px;
       font-size: 16px;
