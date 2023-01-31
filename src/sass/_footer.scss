@@ -25,147 +25,133 @@
       }
   }
   &__text {
-      text-align: left;
-      max-width: 240px;
-      @include tablet {
-        margin-bottom: 90px;
-        max-width: 340px;
-    }
+    text-align: left;
+    max-width: 240px;
+    @include tablet {
+      margin-bottom: 90px;
+      max-width: 340px;
+  }
+  @include desktop {
+    margin-bottom: 97px;
+    max-width: 100%;
+  }
+    &--small {
+  @include text (400, 18px, 1.15, $iceColor, $font-titan);
+  @include tablet {
+    font-size: 26px;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
+  text-transform: uppercase;
+  font-style:normal;
+  margin-bottom: 17px;  
+  }
+    &--big {
+    @include text (400, 34px, 1.15, $buttonFirstColor, $font-titan);
+  letter-spacing: 0.04em;
+    @include tablet {
+      font-size: 48px;
+      letter-spacing: 0.06em;
+  }
     @include desktop {
-      margin-bottom: 97px;
-      max-width: 100%;
+      font-size: 58px;
+  }
+  text-transform: uppercase;
+  font-style:normal;
     }
-      &--small {
-        font-family: $font-titan;
-          color: $iceColor;
-          text-transform: uppercase;
-          font-style:normal;
-          font-size: 18px;
-          font-weight: 400;
-          margin-bottom: 17px;
-          @include tablet {
-            font-size: 26px;
-            line-height: 1.15;
-            letter-spacing: 0.04em;
-          }
-          @include desktop {
-            font-size: 30px;
-          }
-      }
-      &--big {
-        font-family: $font-titan;
-          color: $buttonFirstColor;
-          text-transform: uppercase;
-          font-style:normal;
-          font-size: 34px;
-          font-weight: 400;
-          letter-spacing: 0.04em;
-          @include tablet {
-            font-size: 48px;
-            line-height: 1.15;
-            letter-spacing: 0.06em;
-          }
-          @include desktop {
-            font-size: 58px;
-          }
-      }
   }
-  &__contact {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-  }
-  &__social {
-      display: flex;
+
+&__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+&__social {
+    display: flex;
 gap: 28px;
 @include tablet {
-  gap: 30px;
+gap: 30px;
 }
 @include desktop {
-  gap: 24px;
+gap: 24px;
 }
 justify-content: flex-end;
-  }
-  &__social-item {
-      background-color: #FEA5BB;
-      fill: $primaryColor;
-    border-radius: 50%;
-    font-size: 0px;
-    display: flex;
-      transition-property: background-color;
-      transition-duration: $transitionDurationDefault;
-      transition-timing-function: $transitionTimingDefault;
-      &:hover,
-      &:focus {
-        background-color: $buttonFirstColor;
-      }
-      @include tablet {
-        width: 34px;
-        height: 34px;
-      }
+}
+&__social-item {
+    background-color: #FEA5BB;
+    fill: $primaryColor;
+  border-radius: 50%;
+  font-size: 0px;
+  display: flex;
+    transition-property: background-color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+    &:hover,
+    &:focus {
+      background-color: $buttonFirstColor;
     }
-  &__invitation {
-      display: flex;
-      gap: 3px;
-      margin: 46px 0 40px;
-      @include tablet {
-        margin: 46px 0 0 0;
-      }
-      @include desktop {
-        margin: 50px 0 0 0;
-      }
+    @include tablet {
+      width: 34px;
+      height: 34px;
+    }
   }
-  &__feel-item {
-      font-family: $font-dm-sans;
-      font-size: 12px;
-      color: $firstFontColor;
-      font-weight: 700;
-      line-height: 1.86;
-      @include tablet {
-        font-size: 14px;
-      }
-      @include desktop {
-        font-size: 16px;
-        letter-spacing: 0.02em;
-      }
-  }
-  &__phone-item {
-      font-family: $font-dm-sans;
-      font-size: 12px;
-      color: $buttonFirstColor;
-      font-weight: 500;
-      line-height: 1.86;
-      text-decoration: none;
-      @include tablet {
-        font-size: 14px;
-      }
-      @include desktop {
-        font-size: 16px;
-        letter-spacing: 0.02em;
-      }
-  }
-  &__ending {
-      display: flex;
-      justify-content: center;
-  }
-  &__copyright {
-      font-family: $font-dm-sans;
-      color: $secondFontColor;
-      font-size: 14px;
-      font-weight: 700;
-      font-style: bold;
-      line-height: 1.52;
-      margin: 21px 0 32px;
-      @include tablet {
-        margin: 29px 0 40px;
-        letter-spacing: 0.02em;
+&__invitation {
+    display: flex;
+    gap: 3px;
+    margin: 46px 0 40px;
+    @include tablet {
+      margin: 46px 0 0 0;
     }
     @include desktop {
-      margin: 9px 0 10px;
+      margin: 50px 0 0 0;
+    }
+}
+&__feel-item {
+  @include text (700, 12px, 1.86, $firstFontColor, $font-dm-sans);
+  letter-spacing: 0.04em;
+  @include tablet {
+  font-size: 14px;
   }
-      max-width: 144px;
-      @include tablet {
-          max-width: 100%;
-      }
+  @include desktop {
+  font-size: 16px;
+  letter-spacing: 0.02em;
   }
+}
+&__phone-item {
+  @include text (500, 12px, 1.86, $buttonFirstColor, $font-dm-sans);
+  @include tablet {
+  font-size: 14px;
+  }
+  @include desktop {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  }
+  text-decoration: none;
+}
+&__ending {
+    display: flex;
+    justify-content: center;
+}
+&__copyright {
+  @include text (700, 14px, 1.52, $secondFontColor, $font-dm-sans);
+  letter-spacing: 0.04em;
+  @include tablet {
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  }
+    font-style: bold;
+    margin: 21px 0 32px;
+    @include tablet {
+      margin: 29px 0 40px;
+  }
+  @include desktop {
+    margin: 9px 0 10px;
+}
+    max-width: 150px;
+    @include tablet {
+        max-width: 100%;
+    }
+}
 }
