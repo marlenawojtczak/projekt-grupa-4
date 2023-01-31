@@ -69,22 +69,28 @@
     }
   }
   &__text-white {
-    font-family: $font-titan;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 30px;
+    @include text(400, 26px, 1.15, $primaryColor, $font-titan);
     letter-spacing: 0.04em;
+    @include tablet {
+      font-size: 22px;
+    }
+    @include desktop {
+      font-size: 38px;
+    }
+
     text-align: left;
-    color: #fff;
   }
   &__text-red {
-    font-family: $font-titan;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 46px;
-    letter-spacing: 0em;
+    @include text(400, 48px, 1.1, $redColor, $font-titan);
+    @include tablet {
+      font-size: 34px;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      font-size: 58px;
+    }
+
     text-align: center;
-    color: #d41443;
   }
 
   &__buttons {
@@ -133,12 +139,13 @@
     }
   }
   &__description-text {
+    @include text(400, 8px, 1.5, $primaryColor, $font-dm-sans);
+
     max-width: 114px;
     height: auto;
-    font-size: 8px;
-    font-weight: 400;
-    line-height: 1.5;
+
     padding-bottom: 7px;
+    border: 2px solid red;
   }
   &__element {
     display: none;
@@ -153,18 +160,13 @@
   }
 
   &__element-number {
-    color: #d41443;
+    @include text(400, 28px, 1.1, $redColor, $font-titan);
+
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    font-family: $font-titan;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1.1;
   }
   &__element-text {
-    font-family: $font-dm-sans;
-    font-size: 8px;
-    line-height: 1.1;
+    @include text(400, 8px, 1.1, $primaryColor, $font-dm-sans);
   }
   &__hero-girl {
     display: hidden;
@@ -226,6 +228,7 @@
 
   &__button {
     // font-family: DM Sans;
+
     font-weight: 700;
     line-height: 1.31;
     letter-spacing: 0em;
