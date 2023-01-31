@@ -2,7 +2,7 @@
   background-color: $tertiaryColor;
   padding-bottom: 97px;
   @include tablet {
-    padding: 66px 76px 140px 16px;
+    padding-bottom: 140px;
   }
   @include desktop {
     padding: 0 0 139px 0;
