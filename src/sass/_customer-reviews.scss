@@ -1,10 +1,11 @@
 .reviews {
   padding-bottom: 86px;
+
   &__article {
     max-width: 280px;
     margin: 0 auto;
-    background-color:(0.6, $quoteBgColor);
-    // background-color: rgba(250, 250, 250, 0.4);
+    background-color: $quoteBgColor;
+
     padding-top: 43px;
     &--wrapper {
       background-image: repeating-linear-gradient(
@@ -19,6 +20,7 @@
       margin: 0 auto;
       position: relative;
       padding-bottom: 26px;
+      padding-top: 6px;
     }
   }
   &__picture {
@@ -43,16 +45,16 @@
     color: $firstFontColor;
     font-family: $font-dm-sans;
     font-weight: 500;
-    size: 12px;
+    font-size: 12px;
     line-height: 30.6px;
-    padding-right: 7px;
+    padding-right: 16px;
     padding-left: 7px;
   }
   &__icon {
     position: absolute;
     z-index: 1;
-    left: 1px;
-    top: -22px;
+    top: -11px;
+    left: 13px;
     fill: $quoteColor;
   }
   &__list {
@@ -95,7 +97,9 @@
       max-width: 620px;
       padding-top: 30px;
       &--wrapper {
-        max-width: 620px;
+        max-width: 524px;
+        margin-left: 60px;
+        margin-right: 36px;
       }
     }
     &__picture-customer {
@@ -103,11 +107,15 @@
     }
     &__text {
       max-width: 544px;
-      size: 14px;
+      font-size: 14px;
       letter-spacing: 0.04em;
+      padding-left: 20px;
+      padding-right: 44px;
+      margin-top: -3px;
     }
     &__icon {
-      left: 11px;
+      top: -13px;
+      left: -16px;
     }
     &__list--dots {
       margin-top: 24px;
@@ -136,11 +144,13 @@
     }
     &__text {
       max-width: 813px;
-      size: 16px;
+      font-size: 16px;
       letter-spacing: 0.04em;
+      padding-left: 28px;
+      margin-top: -6px;
     }
     &__icon {
-      left: -21px;
+      left: -11px;
     }
     &__list--dots {
       margin-top: 15px;
