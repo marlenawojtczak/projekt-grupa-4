@@ -9,18 +9,28 @@
 
   @include tablet {
     height: 264px;
-    text-align: center;
     margin-bottom: 121px;
   }
 
   @include desktop {
     height: 430px;
-    text-align: center;
     margin-bottom: 123px;
   }
 
   &__container {
     display: flex;
     justify-content: center;
+  }
+
+  &__picture {
+width: 280px;
+
+@include tablet {
+  width: 620px;
+}
+
+@include desktop {
+  width: 1050px;
+}
   }
 }
