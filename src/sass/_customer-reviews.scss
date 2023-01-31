@@ -3,7 +3,8 @@
   &__article {
     max-width: 280px;
     margin: 0 auto;
-    background-color: $quoteBgColor;
+    background-color:(0.6, $quoteBgColor);
+    // background-color: rgba(250, 250, 250, 0.4);
     padding-top: 43px;
     &--wrapper {
       background-image: repeating-linear-gradient(
@@ -44,6 +45,8 @@
     font-weight: 500;
     size: 12px;
     line-height: 30.6px;
+    padding-right: 7px;
+    padding-left: 7px;
   }
   &__icon {
     position: absolute;
