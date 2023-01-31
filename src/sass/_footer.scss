@@ -1,11 +1,6 @@
 .footer {
   background-color: $tertiaryColor;
-  background-image: url('../images/footer/footer-line-mobile.png');
-  @include tablet {
-    background-image: url('../images/footer/footer-line-tablet.png');
-  }
-  @include desktop {
-  background-image: url('../images/footer/footer-line-desktop.png');}
+  background-image: url('../images/footer/footer-line-desktop.png');
   background-size: 100vw;
   background-position: bottom 99px center;
   @include tablet {
