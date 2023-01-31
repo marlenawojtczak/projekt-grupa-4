@@ -1,10 +1,24 @@
 .reviews {
   padding-bottom: 86px;
+  @include tablet {
+    padding-bottom: 119px;
+  }
+  @include desktop {
+    padding-bottom: 132px;
+  }
   &__article {
     max-width: 280px;
     margin: 0 auto;
     background-color: $quoteBgColor;
     padding-top: 43px;
+    @include tablet {
+      max-width: 620px;
+      padding-top: 30px;
+    }
+    @include desktop {
+      max-width: 926px;
+      padding-top: 30px;
+    }
     &--wrapper {
       background-image: repeating-linear-gradient(
         $quoteBgColor,
@@ -18,6 +32,13 @@
       margin: 0 auto;
       position: relative;
       padding-bottom: 26px;
+      @include tablet {
+        max-width: 620px;
+      }
+      @include desktop {
+        max-width: 822px;
+        padding-bottom: 31px;
+      }
     }
   }
   &__picture {
@@ -31,6 +52,12 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+    @include tablet {
+      margin-bottom: 19px;
+    }
+    @include desktop {
+      margin-bottom: 15px;
+    }
   }
   &__text {
     max-width: 180px;
@@ -44,6 +71,16 @@
     font-weight: 500;
     size: 12px;
     line-height: 30.6px;
+    @include tablet {
+      max-width: 544px;
+      size: 14px;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      max-width: 813px;
+      size: 16px;
+      letter-spacing: 0.04em;
+    }
   }
   &__icon {
     position: absolute;
@@ -51,6 +88,12 @@
     left: 1px;
     top: -22px;
     fill: $quoteColor;
+    @include tablet {
+      left: 11px;
+    }
+    @include desktop {
+      left: -21px;
+    }
   }
   &__list {
     display: flex;
@@ -59,6 +102,12 @@
     margin-top: 30px;
     gap: 10px;
     justify-content: center;
+    @include tablet {
+      margin-top: 24px;
+    }
+    @include desktop {
+      margin-top: 15px;
+    }
   }
   &__item--dot {
     width: 4px;
@@ -71,6 +120,14 @@
     text-align: center;
     margin-bottom: 42px;
     color: $firstFontColor;
+    @include tablet {
+      margin-top: 14px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    @include desktop {
+      margin-top: 15px;
+    }
   }
   &__list--home {
     margin-top: 30px;
@@ -84,7 +141,7 @@
     border-radius: 50%;
   }
 }
-
+/*
 @media screen and (min-width: $tablet) {
   .reviews {
     padding-bottom: 119px;
@@ -168,3 +225,4 @@
   height: 12px;
   margin-top: 30px;
 }
+*/
