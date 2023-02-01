@@ -1,0 +1,299 @@
+.header {
+  background-color: $secondaryColor;
+  min-height: 502px;
+  overflow: hidden;
+  @include tablet {
+    min-height: 399px;
+    padding-top: 38px;
+    padding-bottom: 264px;
+  }
+  @include desktop {
+    min-height: 665px;
+    background-color: $secondaryColor;
+  }
+  &__container {
+    position: relative;
+  }
+  &__logo-container {
+    display: flex;
+  }
+  &__circle-bg {
+    width: 346px;
+    height: 344px;
+    position: absolute;
+    top: 83px;
+    left: 36px;
+    border-radius: 50%;
+    background-color: $iceColor;
+    z-index: 0;
+    @include tablet {
+      width: 324px;
+      height: 322px;
+      top: 0px;
+      left: 287px;
+    }
+    @include desktop {
+      width: 538px;
+      height: 538px;
+      top: 15px;
+      left: 475px;
+    }
+  }
+  &__hero-ice-cream {
+    position: absolute;
+    top: 15px;
+    left: 81px;
+    width: 171px;
+    height: auto;
+    @include tablet {
+      position: absolute;
+      top: 32px;
+      left: 71px;
+      width: 143px;
+    }
+    @include desktop {
+      top: 55px;
+      left: 120px;
+      width: 236px;
+      height: auto;
+      display: block;
+    }
+  }
+  &__text {
+    position: absolute;
+    left: -16px;
+    top: 110px;
+    width: 218px;
+    @include tablet {
+      width: 162px;
+      top: 65px;
+      left: -250px;
+    }
+    @include desktop {
+      width: 277px;
+      left: -354px;
+    }
+  }
+  &__text-white {
+    @include text(400, 26px, 1.15, $primaryColor, $font-titan);
+    letter-spacing: 0.04em;
+    @include tablet {
+      font-size: 22px;
+    }
+    @include desktop {
+      font-size: 38px;
+    }
+    text-align: left;
+  }
+  &__text-red {
+    @include text(400, 48px, 1.1, $redColor, $font-titan);
+    @include tablet {
+      font-size: 34px;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      font-size: 58px;
+    }
+    text-align: center;
+  }
+  &__buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 19px;
+  }
+  &__description {
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 250px;
+      left: 155px;
+    }
+    @include desktop {
+      top: 450px;
+      left: 300px;
+    }
+  }
+  &__description-text {
+    @include text(400, 8px, 1.5, $primaryColor, $font-dm-sans);
+    max-width: 114px;
+    height: auto;
+    padding-bottom: 7px;
+    @include desktop {
+      font-size: 14px;
+      max-width: 200px;
+      padding-bottom: 20px;
+    }
+  }
+  &__button-description {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-image: url(../images/products/products-arrow.png);
+    background-position: center;
+    background-size: cover;
+    @include desktop {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  &__element {
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      position: absolute;
+      top: 60px;
+      right: 34px;
+    }
+    @include desktop {
+      right: 90px;
+      top: 120px;
+    }
+  }
+  &__element-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__element-number {
+    @include text(400, 28px, 1.1, $redColor, $font-titan);
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+    z-index: 1;
+    @include desktop {
+      font-size: 46px;
+    }
+  }
+  &__element-text {
+    @include text(400, 8px, 1.1, $primaryColor, $font-dm-sans);
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(-8px);
+    @include desktop {
+      font-size: 14px;
+      transform: translateX(-18px);
+    }
+  }
+  &__element-text::after {
+    @include desktop {
+      content: '';
+      background-image: url(/src/images/hero/ellipse-desktop.png);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: -59px;
+      right: -15px;
+    }
+  }
+  &__element-circle {
+    position: absolute;
+    right: 0px;
+    @include desktop {
+      display: none;
+    }
+  }
+  &__hero-girl {
+    display: hidden;
+    opacity: 0;
+    @include tablet {
+      display: initial;
+      position: absolute;
+      top: 228px;
+      right: 40px;
+      width: 168px;
+      height: auto;
+      display: block;
+      opacity: 1;
+    }
+    @include desktop {
+      top: 401px;
+      left: 878px;
+      width: 293px;
+      height: auto;
+      display: block;
+    }
+  }
+  &__hero-milk {
+    display: none;
+    @include tablet {
+      display: initial;
+      position: absolute;
+      top: 208px;
+      left: 34px;
+      width: 124px;
+      height: auto;
+      display: block;
+    }
+    @include desktop {
+      top: 400px;
+      left: 85px;
+      width: 188px;
+      height: auto;
+      display: block;
+    }
+  }
+}
+.logo {
+  display: flex;
+  padding-top: 6px;
+  @include tablet {
+    padding-top: 0;
+  }
+  @include desktop {
+    justify-content: flex-start;
+    transform: translateX(-60px);
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include tablet {
+    gap: 30px;
+  }
+  &__links {
+    display: none;
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+      transform: translateX(-60px);
+      z-index: 1;
+    }
+  }
+  &__link {
+    @include text(700, 16px, 1.3, $primaryColor, $font-dm-sans);
+    &:hover,
+    &:focus {
+      color: $redColor;
+    }
+  }
+  &__button {
+    letter-spacing: 0em;
+    background-color: $primaryColor;
+    display: none;
+    @include text(700, 16px, 1.3, $redColor, $font-dm-sans);
+    @include tablet {
+      display: initial;
+      width: 158px;
+      height: 44px;
+      border-radius: 22px;
+      border: none;
+    }
+    &__button {
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        outline: none;
+        color: $redColor;
+        background-color: $buttonSecondColor;
+      }
+    }
+  }
+}

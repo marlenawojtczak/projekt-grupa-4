@@ -1,0 +1,172 @@
+.contacts {
+  background-color: $tertiaryColor;
+  padding-bottom: 113px;
+  @include tablet {
+    padding-bottom: 165px;
+  }
+  @include desktop {
+    padding-bottom: 165px;
+  }
+  &__title {
+    display: none;
+  }
+  &-grid {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    transform: translateY(-90px);
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      transform: translateY(-75px);
+    }
+    @include desktop {
+      gap: 30px;
+      transform: translateY(-90px);
+    }
+  }
+  &__element {
+    width: 220px;
+    margin: 0 auto;
+    padding: 43px 20px;
+    background-color: $primaryColor;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    @include tablet {
+      margin: 0;
+      padding: 50px 31px;
+    }
+    @include desktop {
+      width: 330px;
+      padding: 51px 44px 62px 43px;
+    }
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    border-bottom: 1px solid $quoteColor;
+    gap: 10px;
+    @include tablet {
+      padding: 30px 0;
+      gap: 14px;
+      &:nth-of-type(2) {
+        gap: 16px;
+      }
+    }
+    @include desktop {
+      padding: 32px 0;
+      gap: 10px;
+      &:nth-of-type(2) {
+        gap: 15px;
+      }
+    }
+  }
+  &__unit-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 16px;
+    background-color: $coffeeColor;
+    text-transform: uppercase;
+    border-radius: 4px;
+    @include text(500, 12px, 1.86, $primaryColor, $font-dm-sans);
+    letter-spacing: 0.04em;
+    &--foodtruck {
+      background-color: $milkshakeColor;
+      width: 130px;
+      @include tablet {
+        width: 138px;
+      }
+      @include desktop {
+        width: 138px;
+      }
+    }
+    @include tablet {
+      height: 28px;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 1.86;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      height: 28px;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: $firstFontColor;
+    &--time {
+      color: $iceColor;
+      margin-top: -2px;
+    }
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+  &__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondFontColor;
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.83;
+    }
+  }
+  &__contact-details {
+    margin-top: 25px;
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include desktop {
+      margin-top: 32px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondFontColor;
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.83;
+    }
+  }
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: -36px;
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 6px;
+      gap: 14.5px;
+    }
+    @include desktop {
+      margin-top: 0px;
+      gap: 15px;
+    }
+  }
+}

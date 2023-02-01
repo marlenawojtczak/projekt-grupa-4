@@ -1,0 +1,180 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  color: $firstFontColor;
+  @include tablet {
+    max-width: 620px;
+  }
+  @include desktop {
+    max-width: 926px;
+  }
+  &__section-container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 170px;
+    @include tablet {
+      max-width: 768px;
+      padding: 0px 74px;
+      margin-bottom: 191px;
+    }
+    @include desktop {
+      max-width: 1280px;
+      padding: 0px 176px 0px 178px;
+      margin-bottom: 228px;
+    }
+  }
+  &__wrapper {
+    margin: 0 auto;
+  }
+  &__picture {
+    padding-bottom: 29px;
+    @include tablet {
+      padding-bottom: 19px;
+    }
+    @include desktop {
+      padding-bottom: 15px;
+    }
+  }
+  &__text-wraper {
+    display: block;
+    position: relative;
+    background-color: $quoteBgColor;
+    padding: 43px 50px 20px 50px;
+    @include tablet {
+      padding: 47px 36px 28px 60px;
+      background-color: $primaryColor;
+    }
+    @include desktop {
+      padding: 47px 54px 32px 59px;
+      background-color: $quoteBgColor;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 61px;
+      display: block;
+      background-image: url(../images/customers/quote.png);
+      width: 54px;
+      height: 40px;
+      @include tablet {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        display: block;
+        background-image: url(../images/customers/quote.png);
+        width: 54px;
+        height: 40px;
+      }
+      @include desktop {
+        content: '';
+        position: absolute;
+        top: 32px;
+        left: 50px;
+        display: block;
+        background-image: url(../images/customers/quote.png);
+        width: 54px;
+        height: 40px;
+      }
+    }
+  }
+  &__text {
+    background-image: repeating-linear-gradient(
+      transparent 0px,
+      transparent 29px,
+      $quoteColor 29px,
+      $quoteColor 30px
+    );
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 0px 16px 0px 7px;
+    @include text(500, 12px, 2.55, $firstFontColor, $font-dm-sans);
+    text-align: center;
+    @include tablet {
+      padding: 0px 44px 0px 20px;
+      font-size: 14px;
+      line-height: 2.16;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      padding: 0px 35px 0px 28px;
+      @include text(500, 16px, 1.86, $firstFontColor, $font-dm-sans);
+      letter-spacing: 0.04em;
+      background-image: repeating-linear-gradient(
+        transparent 0px,
+        transparent 28px,
+        $quoteColor 28px,
+        $quoteColor 29px
+      );
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    gap: 10px;
+  }
+  &__item::after {
+    content: '';
+    display: inline-block;
+    margin-top: 30px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $buttonThirdColor;
+    @include tablet {
+      margin-top: 24px;
+    }
+    @include desktop {
+      margin-top: 10px;
+    }
+  }
+  &__name {
+    @include text(500, 14px, 1.86, $firstFontColor, $font-dm-sans);
+    font-family: $font-dm-sans;
+    padding-top: 18px;
+    text-align: center;
+    position: relative;
+    @include tablet {
+      font-size: 16px;
+      padding-top: 14px;
+      line-height: 1.56;
+    }
+    @include desktop {
+      font-size: 20px;
+      padding-top: 15px;
+      line-height: 1.55;
+    }
+  }
+}
+.swiper-slide {
+  margin-bottom: 48px;
+  @include tablet {
+    margin-bottom: 53px;
+  }
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+}
+.swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-image: url('../images/svg/bullet-active.svg');
+  background-size: 12px 12px;
+  background-color: transparent;
+  border-radius: 0;
+  background-repeat: no-repeat;
+}
