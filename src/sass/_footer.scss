@@ -85,6 +85,8 @@
     border-radius: 50%;
     font-size: 0px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     transition-property: background-color;
     transition-duration: $transitionDurationDefault;
     transition-timing-function: $transitionTimingDefault;
