@@ -83,6 +83,7 @@
     }
   }
   &__text {
+    @include text(500, 12px, 2.55, $firstFontColor, $font-dm-sans);
     background-image: repeating-linear-gradient(
       transparent 0px,
       transparent 29px,
@@ -94,10 +95,8 @@
     z-index: 1;
     padding: 0px 16px 0px 7px;
     font-family: $font-dm-sans;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.55;
     text-align: center;
+
     @include tablet {
       padding: 0px 44px 0px 20px;
       font-size: 14px;
@@ -141,10 +140,8 @@
     }
   }
   &__name {
+    @include text(500, 14px, 1.86, $firstFontColor, $font-dm-sans);
     font-family: $font-dm-sans;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
     padding-top: 18px;
     text-align: center;
     position: relative;
