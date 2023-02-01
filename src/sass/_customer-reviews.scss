@@ -1,210 +1,182 @@
 .reviews {
-  padding-bottom: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  color: $firstFontColor;
   @include tablet {
-    padding-bottom: 119px;
+    max-width: 620px;
   }
   @include desktop {
-    padding-bottom: 132px;
+    max-width: 926px;
   }
-  &__article {
-    max-width: 280px;
+  &__section-container {
+    max-width: 320px;
     margin: 0 auto;
-    background-color: $quoteBgColor;
-    padding-top: 43px;
+    padding: 0px 20px;
+    margin-bottom: 170px;
     @include tablet {
-      max-width: 620px;
-      padding-top: 30px;
+      max-width: 768px;
+      padding: 0px 74px;
+      margin-bottom: 191px;
     }
     @include desktop {
-      max-width: 926px;
-      padding-top: 30px;
+      max-width: 1280px;
+      padding: 0px 176px 0px 178px;
+      margin-bottom: 228px;
     }
-    &--wrapper {
-      background-image: repeating-linear-gradient(
-        $quoteBgColor,
-        $quoteBgColor 30px,
-        $quoteColor 1px,
-        $quoteColor 31px
-      );
-      max-width: 180px;
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      position: relative;
-      padding-bottom: 26px;
-      @include tablet {
-        max-width: 620px;
-      }
-      @include desktop {
-        max-width: 822px;
-        padding-bottom: 31px;
-      }
-    }
+  }
+  &__wrapper {
+    margin: 0 auto;
   }
   &__picture {
-    display: flex;
-    justify-content: center;
-  }
-  &__picture-customer {
-    max-width: 85px;
-    width: 100%;
-    margin-bottom: 29px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+    padding-bottom: 29px;
     @include tablet {
-      margin-bottom: 19px;
+      padding-bottom: 19px;
     }
     @include desktop {
-      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  &__text-wraper {
+    display: block;
+    position: relative;
+    background-color: $quoteBgColor;
+    padding: 43px 50px 20px 50px;
+    @include tablet {
+      padding: 47px 36px 28px 60px;
+      background-color: $primaryColor;
+    }
+    @include desktop {
+      padding: 47px 54px 32px 59px;
+      background-color: $quoteBgColor;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 61px;
+      display: block;
+      background-image: url(../images/customers/quote.png);
+      width: 54px;
+      height: 40px;
+      @include tablet {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        display: block;
+        background-image: url(../images/customers/quote.png);
+        width: 54px;
+        height: 40px;
+      }
+      @include desktop {
+        content: '';
+        position: absolute;
+        top: 32px;
+        left: 50px;
+        display: block;
+        background-image: url(../images/customers/quote.png);
+        width: 54px;
+        height: 40px;
+      }
     }
   }
   &__text {
-    max-width: 180px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    background-image: repeating-linear-gradient(
+      transparent 0px,
+      transparent 29px,
+      $quoteColor 29px,
+      $quoteColor 30px
+    );
+    display: block;
     position: relative;
-    z-index: 10;
-    color: $firstFontColor;
+    z-index: 1;
+    padding: 0px 16px 0px 7px;
     font-family: $font-dm-sans;
     font-weight: 500;
-    size: 12px;
-    line-height: 30.6px;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
     @include tablet {
-      max-width: 544px;
-      size: 14px;
+      padding: 0px 44px 0px 20px;
+      font-size: 14px;
+      line-height: 2.16;
       letter-spacing: 0.04em;
     }
     @include desktop {
-      max-width: 813px;
-      size: 16px;
+      padding: 0px 35px 0px 28px;
+      font-size: 16px;
+      line-height: 1.86;
       letter-spacing: 0.04em;
-    }
-  }
-  &__icon {
-    position: absolute;
-    z-index: 1;
-    left: 1px;
-    top: -22px;
-    fill: $quoteColor;
-    @include tablet {
-      left: 11px;
-    }
-    @include desktop {
-      left: -21px;
+      background-image: repeating-linear-gradient(
+        transparent 0px,
+        transparent 28px,
+        $quoteColor 28px,
+        $quoteColor 29px
+      );
     }
   }
   &__list {
     display: flex;
-  }
-  &__list--dots {
-    margin-top: 30px;
-    gap: 10px;
+    flex-direction: row;
     justify-content: center;
-    @include tablet {
-      margin-top: 24px;
-    }
-    @include desktop {
-      margin-top: 15px;
-    }
+    align-items: center;
+    line-height: 1;
+    gap: 10px;
   }
-  &__item--dot {
+  &__item::after {
+    content: '';
+    display: inline-block;
+    margin-top: 30px;
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: red;
-  }
-  &__name {
-    margin-top: 18px;
-    text-align: center;
-    margin-bottom: 42px;
-    color: $firstFontColor;
+    background-color: $buttonThirdColor;
     @include tablet {
-      margin-top: 14px;
-      text-align: center;
-      margin-bottom: 35px;
-    }
-    @include desktop {
-      margin-top: 15px;
-    }
-  }
-  &__list--home {
-    margin-top: 30px;
-    gap: 18px;
-    justify-content: center;
-  }
-  &__item {
-    background-color: #d9d9d9;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-  }
-}
-/*
-@media screen and (min-width: $tablet) {
-  .reviews {
-    padding-bottom: 119px;
-    &__article {
-      max-width: 620px;
-      padding-top: 30px;
-      &--wrapper {
-        max-width: 620px;
-      }
-    }
-    &__picture-customer {
-      margin-bottom: 19px;
-    }
-    &__text {
-      max-width: 544px;
-      size: 14px;
-      letter-spacing: 0.04em;
-    }
-    &__icon {
-      left: 11px;
-    }
-    &__list--dots {
       margin-top: 24px;
     }
-    &__name {
-      margin-top: 14px;
-      text-align: center;
-      margin-bottom: 35px;
+    @include desktop {
+      margin-top: 10px;
+    }
+  }
+  &__name {
+    font-family: $font-dm-sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    padding-top: 18px;
+    text-align: center;
+    position: relative;
+    @include tablet {
+      font-size: 16px;
+      padding-top: 14px;
+      line-height: 1.56;
+    }
+    @include desktop {
+      font-size: 20px;
+      padding-top: 15px;
+      line-height: 1.55;
     }
   }
 }
-
-@media screen and (min-width: $desktop) {
-  .reviews {
-    padding-bottom: 132px;
-    &__article {
-      max-width: 926px;
-      padding-top: 30px;
-      &--wrapper {
-        max-width: 822px;
-        padding-bottom: 31px;
-      }
-    }
-    &__picture-customer {
-      margin-bottom: 15px;
-    }
-    &__text {
-      max-width: 813px;
-      size: 16px;
-      letter-spacing: 0.04em;
-    }
-    &__icon {
-      left: -21px;
-    }
-    &__list--dots {
-      margin-top: 15px;
-    }
-    &__name {
-      margin-top: 15px;
-    }
+.swiper-slide {
+  margin-bottom: 48px;
+  @include tablet {
+    margin-bottom: 53px;
   }
 }
-
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+}
+.swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin-top: 30px;
+}
 .swiper .swiper-pagination-bullet-active {
   background-image: url('../images/svg/bullet-active.svg');
   background-size: 12px 12px;
@@ -212,17 +184,3 @@
   border-radius: 0;
   background-repeat: no-repeat;
 }
-
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  position: relative;
-}
-
-.swiper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  margin-top: 30px;
-}
-*/

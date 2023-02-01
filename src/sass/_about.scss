@@ -28,10 +28,9 @@
   &__title {
     display: flex;
     flex-direction: column;
-    padding: 125px 40px 26px 40px;
+    padding: 130px 40px 26px 40px;
     font-family: $font-titan;
     gap: 15px;
-
     @include tablet {
       padding-bottom: 50px;
     }
@@ -40,7 +39,6 @@
       padding-top: 125px;
     }
   }
-
   &__title-text {
     text-align: center;
     text-transform: uppercase;
@@ -60,7 +58,6 @@
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
-
     @include tablet {
       font-size: 48px;
       line-height: 1.145;

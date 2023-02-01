@@ -1,7 +1,7 @@
 .footer {
   background-color: $tertiaryColor;
   background-image: url('../images/footer/footer-line-mobile@2x.png');
-  @include tablet{
+  @include tablet {
     background-image: url('../images/footer/footer-line-tablet@2x.png');
   }
   @include desktop {
@@ -10,19 +10,20 @@
   background-size: 100vw;
   background-position: bottom 95px right 0px;
   @include tablet {
-  background-position: bottom 90px right 0px;}
+    background-position: bottom 90px right 0px;
+  }
   @include desktop {
     background-position: bottom 45px right 0px;
   }
   background-repeat: no-repeat;
   &__container {
-      display: flex;
-      flex-direction: column;
-      gap: 46px;
-      @include tablet {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   &__text {
     text-align: left;
@@ -30,61 +31,60 @@
     @include tablet {
       margin-bottom: 90px;
       max-width: 340px;
-  }
-  @include desktop {
-    margin-bottom: 97px;
-    max-width: 100%;
-  }
-    &--small {
-  @include text (400, 18px, 1.15, $iceColor, $font-titan);
-  @include tablet {
-    font-size: 26px;
-    letter-spacing: 0.04em;
-  }
-  @include desktop {
-    font-size: 30px;
-  }
-  text-transform: uppercase;
-  font-style:normal;
-  margin-bottom: 17px;  
-  }
-    &--big {
-    @include text (400, 34px, 1.15, $buttonFirstColor, $font-titan);
-  letter-spacing: 0.04em;
-    @include tablet {
-      font-size: 48px;
-      letter-spacing: 0.06em;
-  }
+    }
     @include desktop {
-      font-size: 58px;
-  }
-  text-transform: uppercase;
-  font-style:normal;
+      margin-bottom: 97px;
+      max-width: 100%;
+    }
+    &--small {
+      @include text(400, 18px, 1.15, $iceColor, $font-titan);
+      @include tablet {
+        font-size: 26px;
+        letter-spacing: 0.04em;
+      }
+      @include desktop {
+        font-size: 30px;
+      }
+      text-transform: uppercase;
+      font-style: normal;
+      margin-bottom: 17px;
+    }
+    &--big {
+      @include text(400, 34px, 1.15, $buttonFirstColor, $font-titan);
+      letter-spacing: 0.04em;
+      @include tablet {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+      }
+      @include desktop {
+        font-size: 58px;
+      }
+      text-transform: uppercase;
+      font-style: normal;
     }
   }
-
-&__contact {
+  &__contact {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-&__social {
+  }
+  &__social {
     display: flex;
-gap: 28px;
-@include tablet {
-gap: 30px;
-}
-@include desktop {
-gap: 24px;
-}
-justify-content: flex-end;
-}
-&__social-item {
-    background-color: #FEA5BB;
+    gap: 28px;
+    @include tablet {
+      gap: 30px;
+    }
+    @include desktop {
+      gap: 24px;
+    }
+    justify-content: flex-end;
+  }
+  &__social-item {
+    background-color: #fea5bb;
     fill: $primaryColor;
-  border-radius: 50%;
-  font-size: 0px;
-  display: flex;
+    border-radius: 50%;
+    font-size: 0px;
+    display: flex;
     transition-property: background-color;
     transition-duration: $transitionDurationDefault;
     transition-timing-function: $transitionTimingDefault;
@@ -97,7 +97,7 @@ justify-content: flex-end;
       height: 34px;
     }
   }
-&__invitation {
+  &__invitation {
     display: flex;
     gap: 3px;
     margin: 46px 0 40px;
@@ -107,51 +107,51 @@ justify-content: flex-end;
     @include desktop {
       margin: 50px 0 0 0;
     }
-}
-&__feel-item {
-  @include text (700, 12px, 1.86, $firstFontColor, $font-dm-sans);
-  letter-spacing: 0.04em;
-  @include tablet {
-  font-size: 14px;
   }
-  @include desktop {
-  font-size: 16px;
-  letter-spacing: 0.02em;
+  &__feel-item {
+    @include text(700, 12px, 1.86, $firstFontColor, $font-dm-sans);
+    letter-spacing: 0.04em;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
   }
-}
-&__phone-item {
-  @include text (500, 12px, 1.86, $buttonFirstColor, $font-dm-sans);
-  @include tablet {
-  font-size: 14px;
+  &__phone-item {
+    @include text(500, 12px, 1.86, $buttonFirstColor, $font-dm-sans);
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+    text-decoration: none;
   }
-  @include desktop {
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  }
-  text-decoration: none;
-}
-&__ending {
+  &__ending {
     display: flex;
     justify-content: center;
-}
-&__copyright {
-  @include text (700, 14px, 1.52, $secondFontColor, $font-dm-sans);
-  letter-spacing: 0.04em;
-  @include tablet {
-  line-height: 1.86;
-  letter-spacing: 0.02em;
   }
+  &__copyright {
+    @include text(700, 14px, 1.52, $secondFontColor, $font-dm-sans);
+    letter-spacing: 0.04em;
+    @include tablet {
+      line-height: 1.86;
+      letter-spacing: 0.02em;
+    }
     font-style: bold;
     margin: 21px 0 32px;
     @include tablet {
       margin: 29px 0 40px;
-  }
-  @include desktop {
-    margin: 9px 0 10px;
-}
+    }
+    @include desktop {
+      margin: 9px 0 10px;
+    }
     max-width: 150px;
     @include tablet {
-        max-width: 100%;
+      max-width: 100%;
     }
-}
+  }
 }
