@@ -26,7 +26,7 @@
         </svg>
        </button> -->
       <div>
-        <button class="menu__toggle js-open-menu">
+        <button class="menu__toggle menu__toggle--open js-open-menu">
           <svg width="20" height="12">
             <use href="./images/icons.svg#icon-Burger"></use>
           </svg>
@@ -41,7 +41,12 @@
         <li><a class="nav__link" href="#gallery">Our products</a></li>
         <li><a class="nav__link" href="#contacts">Contact</a></li>
       </ul>
-      <button class="nav__button" type="button">Buy now</button>
+      <button type="submit" class="button button--buy-bt">
+        <span class="menu__buy-txt">Buy now</span>
+        <svg width="7.3" height="10">
+          <use href="images/icons.svg#icon-greater-than"></use>
+        </svg>
+      </button>
     </nav>
     <div class="header__circle-bg">
       <img
@@ -94,6 +99,7 @@
         <span class="header__element-number">16</span>
         <span class="header__element-text">cafes</span>
         <svg
+          class="header__element-circle"
           width="16"
           height="16"
           viewBox="0 0 16 16"
@@ -107,6 +113,7 @@
         <span class="header__element-number">23</span>
         <span class="header__element-text">food tracks</span>
         <svg
+          class="header__element-circle"
           width="16"
           height="16"
           viewBox="0 0 16 16"
