@@ -6,6 +6,10 @@
   }
   @include desktop {
     padding-bottom: 165px;
+    background-image: url(../images/contacts/contacts-bg-desktop.png);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   &__title {
     display: none;
