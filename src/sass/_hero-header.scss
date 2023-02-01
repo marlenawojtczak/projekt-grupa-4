@@ -1,27 +1,18 @@
-@use '../sass/utils/mixins1' as *;
-
 .header {
-  // position: relative;
-
   background-color: #ffb8ca;
-  min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
+  min-height: 502px;
   overflow: hidden;
   @include tablet {
     min-height: 399px;
     padding-top: 38px;
-    padding-bottom: 312px;
-    @include tablet {
-      padding-bottom: 264px;
-    }
+    padding-bottom: 264px;
   }
-
   &__container {
     position: relative;
   }
   &__logo-container {
     display: flex;
   }
-
   &__circle-bg {
     width: 346px;
     height: 344px;
@@ -39,10 +30,10 @@
       left: 287px;
     }
   }
-  // font-family: DM Sans;
+
   &__hero-ice-cream {
     position: absolute;
-    top: 9px;
+    top: 15px;
     left: 81px;
     width: 171px;
     height: auto;
@@ -61,7 +52,7 @@
   // }
   &__text {
     position: absolute;
-    left: -20px;
+    left: -16px;
     top: 110px;
     width: 218px;
     @include tablet {
@@ -344,7 +335,7 @@
     }
 
     &__link {
-      @include font-mixin(#fff, 700, 1rem, 1.31, 0em);
+      @include text(700, 16px, 1.3, $primaryColor, $font-dm-sans);
       &:hover,
       &:focus {
         color: #d41443;

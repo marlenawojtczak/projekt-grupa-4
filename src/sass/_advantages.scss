@@ -27,9 +27,11 @@
   &__element {
     display: flex;
     flex-direction: column;
+    max-width: 230px;
     gap: 16px;
     @include desktop {
       gap: 15px;
+      max-width: none;
     }
   }
   &__img {

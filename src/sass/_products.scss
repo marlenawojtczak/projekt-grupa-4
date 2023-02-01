@@ -9,24 +9,20 @@
     padding-top: 127px;
     padding-bottom: 119px;
   }
-
   &__box {
     display: flex;
     flex-direction: column;
     gap: 17px;
-
     @include tablet {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 20px;
     }
-
     @include desktop {
       gap: 30px;
     }
   }
-
   &__description-title {
     font-family: 'Titan One', cursive;
     font-weight: 400;
@@ -44,7 +40,6 @@
       font-size: 30px;
     }
   }
-
   &__title-section {
     font-family: 'Titan One', cursive;
     font-weight: 400;
@@ -62,7 +57,6 @@
       font-size: 58px;
     }
   }
-
   &__wrapper {
     width: 280px;
     border-radius: 24px;
@@ -77,40 +71,32 @@
       width: 329px;
       margin-top: 259px;
     }
-
     &--cream-bg {
       background: $secondaryColor;
     }
-
     &--caffe-bg {
       background: $coffeeColor;
     }
-
     &--milkshakes-bg {
       background: $milkshakeColor;
     }
   }
-
   &__wrap {
     position: relative;
   }
-
   &__img {
     display: flex;
     position: absolute;
     width: 249px;
     left: 50%;
     transform: translate(-50%, -50%);
-
     @include tablet {
       width: 220px;
     }
-
     @include desktop {
       width: 335px;
     }
   }
-
   &__title {
     font-family: 'Titan One', cursive;
     font-size: 20px;
@@ -132,7 +118,6 @@
       padding-top: 193px;
     }
   }
-
   &__list-dot {
     list-style: none;
     display: flex;
@@ -144,7 +129,6 @@
       padding-bottom: 30px;
     }
   }
-
   &__item-dot::after {
     content: '';
     display: flex;
@@ -154,7 +138,6 @@
     margin-right: 4px;
     background-color: $primaryColor;
   }
-
   &__content {
     text-align: center;
     font-family: 'DM Sans', sans-serif;
@@ -165,7 +148,6 @@
     color: $primaryColor;
     margin-bottom: 30px;
     padding: 0px 39px 0px 41px;
-
     @include tablet {
       padding: 0 11px;
     }
