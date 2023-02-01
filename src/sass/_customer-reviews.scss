@@ -1,12 +1,30 @@
 .reviews {
   padding-bottom: 86px;
 
+  @include tablet {
+    padding-bottom: 119px;
+  }
+
+  @include desktop {
+    padding-bottom: 132px;
+  }
+
   &__article {
     max-width: 280px;
     margin: 0 auto;
     background-color: $quoteBgColor;
-
     padding-top: 43px;
+
+    @include tablet {
+      max-width: 620px;
+      padding-top: 30px;
+    }
+
+    @include desktop {
+      max-width: 926px;
+      padding-top: 30px;
+    }
+
     &--wrapper {
       background-image: repeating-linear-gradient(
         $quoteBgColor,
@@ -21,12 +39,25 @@
       position: relative;
       padding-bottom: 26px;
       padding-top: 6px;
+
+      @include tablet {
+        max-width: 524px;
+        margin-left: 60px;
+        margin-right: 36px;
+      }
+
+      @include desktop {
+        max-width: 822px;
+        padding-bottom: 31px;
+      }
     }
   }
+
   &__picture {
     display: flex;
     justify-content: center;
   }
+
   &__picture-customer {
     max-width: 85px;
     width: 100%;
@@ -34,7 +65,16 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+
+    @include tablet {
+      margin-bottom: 19px;
+    }
+
+    @include desktop {
+      margin-bottom: 15px;
+    }
   }
+
   &__text {
     max-width: 180px;
     width: 100%;
@@ -49,39 +89,90 @@
     line-height: 30.6px;
     padding-right: 16px;
     padding-left: 7px;
+
+    @include tablet {
+      max-width: 544px;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      padding-left: 20px;
+      padding-right: 44px;
+      margin-top: -3px;
+    }
+
+    @include desktop {
+      max-width: 813px;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      padding-left: 28px;
+      margin-top: -6px;
+    }
   }
+
   &__icon {
     position: absolute;
     z-index: 1;
     top: -11px;
     left: 13px;
     fill: $quoteColor;
+
+    @include tablet {
+      top: -13px;
+      left: -16px;
+    }
+
+    @include desktop {
+      left: -11px;
+    }
   }
+
   &__list {
     display: flex;
   }
+
   &__list--dots {
     margin-top: 30px;
     gap: 10px;
     justify-content: center;
   }
+
   &__item--dot {
     width: 4px;
     height: 4px;
     border-radius: 50%;
     background-color: red;
+
+    @include tablet {
+      margin-top: 24px;
+    }
+
+    @include desktop {
+      margin-top: 15px;
+    }
   }
+
   &__name {
     margin-top: 18px;
     text-align: center;
     margin-bottom: 42px;
     color: $firstFontColor;
+
+    @include tablet {
+      margin-top: 14px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    @include desktop {
+       margin-top: 15px;
+    }
   }
+
   &__list--home {
     margin-top: 30px;
     gap: 18px;
     justify-content: center;
   }
+
   &__item {
     background-color: #d9d9d9;
     width: 12px;
@@ -90,76 +181,76 @@
   }
 }
 
-@media screen and (min-width: $tablet) {
-  .reviews {
-    padding-bottom: 119px;
-    &__article {
-      max-width: 620px;
-      padding-top: 30px;
-      &--wrapper {
-        max-width: 524px;
-        margin-left: 60px;
-        margin-right: 36px;
-      }
-    }
-    &__picture-customer {
-      margin-bottom: 19px;
-    }
-    &__text {
-      max-width: 544px;
-      font-size: 14px;
-      letter-spacing: 0.04em;
-      padding-left: 20px;
-      padding-right: 44px;
-      margin-top: -3px;
-    }
-    &__icon {
-      top: -13px;
-      left: -16px;
-    }
-    &__list--dots {
-      margin-top: 24px;
-    }
-    &__name {
-      margin-top: 14px;
-      text-align: center;
-      margin-bottom: 35px;
-    }
-  }
-}
+// @media screen and (min-width: $tablet) {
+//   .reviews {
+//     padding-bottom: 119px;
+//     &__article {
+//       max-width: 620px;
+//       padding-top: 30px;
+//       &--wrapper {
+//         max-width: 524px;
+//         margin-left: 60px;
+//         margin-right: 36px;
+//       }
+//     }
+//     &__picture-customer {
+//       margin-bottom: 19px;
+//     }
+//     &__text {
+//       max-width: 544px;
+//       font-size: 14px;
+//       letter-spacing: 0.04em;
+//       padding-left: 20px;
+//       padding-right: 44px;
+//       margin-top: -3px;
+//     }
+//     &__icon {
+//       top: -13px;
+//       left: -16px;
+//     }
+//     &__list--dots {
+//       margin-top: 24px;
+//     }
+//     &__name {
+//       margin-top: 14px;
+//       text-align: center;
+//       margin-bottom: 35px;
+//     }
+//   }
+// }
 
-@media screen and (min-width: $desktop) {
-  .reviews {
-    padding-bottom: 132px;
-    &__article {
-      max-width: 926px;
-      padding-top: 30px;
-      &--wrapper {
-        max-width: 822px;
-        padding-bottom: 31px;
-      }
-    }
-    &__picture-customer {
-      margin-bottom: 15px;
-    }
-    &__text {
-      max-width: 813px;
-      font-size: 16px;
-      letter-spacing: 0.04em;
-      padding-left: 28px;
-      margin-top: -6px;
-    }
-    &__icon {
-      left: -11px;
-    }
-    &__list--dots {
-      margin-top: 15px;
-    }
-    &__name {
-      margin-top: 15px;
-    }
-  }
-}
+// @media screen and (min-width: $desktop) {
+//   .reviews {
+//     padding-bottom: 132px;
+//     &__article {
+//       max-width: 926px;
+//       padding-top: 30px;
+//       &--wrapper {
+//         max-width: 822px;
+//         padding-bottom: 31px;
+//       }
+//     }
+//     &__picture-customer {
+//       margin-bottom: 15px;
+//     }
+//     &__text {
+//       max-width: 813px;
+//       font-size: 16px;
+//       letter-spacing: 0.04em;
+//       padding-left: 28px;
+//       margin-top: -6px;
+//     }
+//     &__icon {
+//       left: -11px;
+//     }
+//     &__list--dots {
+//       margin-top: 15px;
+//     }
+//     &__name {
+//       margin-top: 15px;
+//     }
+//   }
+// }
 
 .swiper .swiper-pagination-bullet-active {
   background-image: url('../images/svg/bullet-active.svg');
