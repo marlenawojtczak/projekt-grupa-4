@@ -177,7 +177,6 @@
     z-index: 1;
     @include desktop {
       font-size: 46px;
-      // z-index: 10;
     }
   }
   &__element-text {
@@ -191,14 +190,15 @@
     }
   }
   &__element-text::after {
-    content: '';
-    background-image: url(/src/images/hero/ellipse-desktop.png);
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: -59px;
-    right: -15px;
-    // z-index: -1;
+    @include desktop {
+      content: '';
+      background-image: url(/src/images/hero/ellipse-desktop.png);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: -59px;
+      right: -15px;
+    }
   }
   &__element-circle {
     position: absolute;
