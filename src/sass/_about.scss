@@ -9,12 +9,12 @@
   @include desktop {
     background-image: url('../images/about/about-bg-desktop@2x.png');
     background-size: 100%;
-    background-position: 100% 130%;
+    background-position: 100% 110%;
     background-repeat: no-repeat;
   }
 }
 .about-wrapper {
-  background: $tertiaryColor;
+  background-color: $tertiaryColor;
   padding-bottom: 39px;
   margin: 0px;
   @include tablet {
