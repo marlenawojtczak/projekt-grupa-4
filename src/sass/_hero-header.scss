@@ -1,5 +1,5 @@
 .header {
-  background-color: #ffb8ca;
+  background-color: $secondaryColor;
   min-height: 502px;
   overflow: hidden;
   @include tablet {
@@ -7,6 +7,11 @@
     padding-top: 38px;
     padding-bottom: 264px;
   }
+  @include desktop {
+    min-height: 665px;
+    background-color: $secondaryColor;
+  }
+
   &__container {
     position: relative;
   }
@@ -19,15 +24,20 @@
     position: absolute;
     top: 83px;
     left: 36px;
-    // left: calc(100vw - 284px);
     border-radius: 50%;
-    background-color: #ffa5ba;
+    background-color: $iceColor;
     z-index: 0;
     @include tablet {
       width: 324px;
       height: 322px;
       top: 0px;
       left: 287px;
+    }
+    @include desktop {
+      width: 538px;
+      height: 538px;
+      top: 15px;
+      left: 475px;
     }
   }
 
@@ -37,26 +47,34 @@
     left: 81px;
     width: 171px;
     height: auto;
-    // display: block;
     @include tablet {
       position: absolute;
       top: 32px;
       left: 71px;
       width: 143px;
-      // display: block;
+    }
+    @include desktop {
+      top: 55px;
+      left: 120px;
+      width: 236px;
+      height: auto;
+      display: block;
     }
   }
-  // &__center {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+
   &__text {
     position: absolute;
     left: -16px;
     top: 110px;
     width: 218px;
     @include tablet {
-      // display: none;
+      width: 162px;
+      top: 65px;
+      left: -250px;
+    }
+    @include desktop {
+      width: 277px;
+      left: -354px;
     }
   }
   &__text-white {
@@ -89,44 +107,18 @@
     gap: 8px;
     margin-top: 19px;
   }
-  // &__button {
-  //   display: flex;
-  //   align-items: center;
-  //   height: 24px;
-  //   background-color: #ffffff;
-  //   color: #d41443;
-  //   fill: #d41443;
-  //   border-radius: 20px;
-  //   padding: 0 13.6px;
-  //   font-family: 'DM Sans', sans-serif;
-  //   font-size: 8px;
-  //   line-height: 10px;
-  //   cursor: pointer;
-  //   border: none;
-  //   justify-content: center;
-  //   &:hover,
-  //   &:focus {
-  //     background-color: #ececec;
-  //   }
-  //   &--opposite-color {
-  //     background-color: #d41443;
-  //     color: #fff;
-  //     fill: #fff;
-
-  //     &:hover,
-  //     &:focus {
-  //       background-color: #c7133e;
-  //     }
-  //   }
-  // }
   &__description {
     display: none;
     @include tablet {
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 260px;
-      left: 134px;
+      top: 250px;
+      left: 155px;
+    }
+    @include desktop {
+      top: 450px;
+      left: 300px;
     }
   }
   &__description-text {
@@ -136,13 +128,39 @@
     height: auto;
 
     padding-bottom: 7px;
-    border: 2px solid red;
+    @include desktop {
+      font-size: 14px;
+      max-width: 200px;
+      padding-bottom: 20px;
+    }
+  }
+  &__button-description {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-image: url(../images/products/products-arrow.png);
+    background-position: center;
+    background-size: cover;
+    @include desktop {
+      width: 26px;
+      height: 26px;
+    }
   }
   &__element {
     display: none;
     @include tablet {
       display: flex;
+      flex-direction: column;
+      gap: 13px;
       position: absolute;
+      top: 60px;
+      right: 34px;
+    }
+    @include desktop {
+      right: 90px;
+      top: 120px;
     }
   }
   &__element-item {
@@ -155,9 +173,39 @@
 
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    padding-bottom: 1px;
+    z-index: 1;
+    @include desktop {
+      font-size: 46px;
+      // z-index: 10;
+    }
   }
   &__element-text {
     @include text(400, 8px, 1.1, $primaryColor, $font-dm-sans);
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(-8px);
+    @include desktop {
+      font-size: 14px;
+      transform: translateX(-18px);
+    }
+  }
+  &__element-text::after {
+    content: '';
+    background-image: url(/src/images/hero/ellipse-desktop.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -59px;
+    right: -15px;
+    // z-index: -1;
+  }
+  &__element-circle {
+    position: absolute;
+    right: 0px;
+    @include desktop {
+      display: none;
+    }
   }
   &__hero-girl {
     display: hidden;
@@ -165,11 +213,19 @@
     @include tablet {
       display: initial;
       position: absolute;
-      right: 20px;
+      top: 395px;
+      right: 40px;
+
       width: 168px;
       height: auto;
       display: block;
       opacity: 1;
+    }
+    @include desktop {
+      left: 878px;
+      width: 293px;
+      height: auto;
+      display: block;
     }
   }
 
@@ -178,22 +234,19 @@
     @include tablet {
       display: initial;
       position: absolute;
-      top: 210px;
+      top: 208px;
       left: 34px;
       width: 124px;
       height: auto;
       display: block;
     }
-  }
-  &__button-description {
-    width: 18px;
-    height: 18px;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    background-image: url(../images/products/products-arrow.png);
-    background-position: center;
-    background-size: cover;
+    @include desktop {
+      top: 400px;
+      left: 85px;
+      width: 188px;
+      height: auto;
+      display: block;
+    }
   }
 }
 .logo {
@@ -202,30 +255,41 @@
   @include tablet {
     padding-top: 0;
   }
+  @include desktop {
+    justify-content: flex-start;
+    transform: translateX(-60px);
+  }
 }
 .nav {
-  // position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // z-index: 10;
   @include tablet {
     gap: 30px;
   }
 
   &__links {
     display: none;
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+      transform: translateX(-60px);
+      z-index: 1;
+    }
   }
-
+  &__link {
+    @include text(700, 16px, 1.3, $primaryColor, $font-dm-sans);
+    &:hover,
+    &:focus {
+      color: $redColor;
+    }
+  }
   &__button {
-    // font-family: DM Sans;
-
-    font-weight: 700;
-    line-height: 1.31;
     letter-spacing: 0em;
-    background-color: #d41443;
+    background-color: $primaryColor;
     display: none;
-    color: #fff;
+    @include text(700, 16px, 1.3, $redColor, $font-dm-sans);
     @include tablet {
       display: initial;
       width: 158px;
@@ -238,111 +302,9 @@
       &:focus {
         cursor: pointer;
         outline: none;
-        color: #d41443;
-        background-color: #ecebeb;
+        color: $redColor;
+        background-color: $buttonSecondColor;
       }
     }
-  }
-}
-
-// ======================== RESPONSIVE NAV BURGER START =====================
-
-// .menu-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   padding: 48px 40px;
-//   background-color: #e17992;
-//   z-index: 999;
-//   border: 2px solid rgb(38, 206, 22);
-
-//   transform: translateX(100%);
-//   transition: transform 250ms ease-in-out;
-
-//   &.is-open {
-//     transform: translateX(0);
-//   }
-
-// .menu-toggle {
-//   position: absolute;
-//   top: 16px;
-//   right: 16px;
-// }
-// }
-
-// .menu-toggle {
-//   padding: 0;
-//   background-color: transparent;
-//   cursor: pointer;
-//   border: none;
-//   outline: none;
-//   color: #fff;
-//   transition: color 250ms ease-in-out;
-
-//   &:hover,
-//   &:focus {
-//     color: #fff;
-//   }
-// }
-
-// ======================== RESPONSIVE NAV BURGER END =====================
-
-/* =============================== MEDIA =====================*/
-
-@media screen and (min-width: 1280px) {
-  .header {
-    min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
-    padding: 37px 115px 56px 46px;
-    background-color: #ffb8ca;
-    &__circle-bg {
-      width: 538px;
-      height: 538px;
-      top: 52px;
-      left: 475px;
-    }
-
-    &__hero-ice-cream {
-      left: 594px;
-      width: 236px;
-      height: auto;
-      display: block;
-    }
-
-    &__hero-girl {
-      left: 878px;
-      width: 293px;
-      height: auto;
-      display: block;
-    }
-
-    &__hero-milk {
-      bottom: 44px;
-      left: 77px;
-      width: 188px;
-      height: auto;
-      display: block;
-    }
-  }
-
-  .nav {
-    &__links {
-      display: flex;
-      list-style-type: none;
-      justify-content: space-between;
-      gap: 35px;
-    }
-
-    &__link {
-      @include text(700, 16px, 1.3, $primaryColor, $font-dm-sans);
-      &:hover,
-      &:focus {
-        color: #d41443;
-      }
-    }
-    // .menu-toggle {
-    //   display: none;
-    // }
   }
 }
