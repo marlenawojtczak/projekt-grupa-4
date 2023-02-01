@@ -11,7 +11,6 @@
     min-height: 665px;
     background-color: $secondaryColor;
   }
-
   &__container {
     position: relative;
   }
@@ -40,7 +39,6 @@
       left: 475px;
     }
   }
-
   &__hero-ice-cream {
     position: absolute;
     top: 15px;
@@ -61,7 +59,6 @@
       display: block;
     }
   }
-
   &__text {
     position: absolute;
     left: -16px;
@@ -86,7 +83,6 @@
     @include desktop {
       font-size: 38px;
     }
-
     text-align: left;
   }
   &__text-red {
@@ -98,10 +94,8 @@
     @include desktop {
       font-size: 58px;
     }
-
     text-align: center;
   }
-
   &__buttons {
     display: flex;
     gap: 8px;
@@ -123,10 +117,8 @@
   }
   &__description-text {
     @include text(400, 8px, 1.5, $primaryColor, $font-dm-sans);
-
     max-width: 114px;
     height: auto;
-
     padding-bottom: 7px;
     @include desktop {
       font-size: 14px;
@@ -167,7 +159,6 @@
     display: flex;
     flex-direction: column;
   }
-
   &__element-number {
     @include text(400, 28px, 1.1, $redColor, $font-titan);
 
@@ -213,22 +204,21 @@
     @include tablet {
       display: initial;
       position: absolute;
-      top: 395px;
+      top: 228px;
       right: 40px;
-
       width: 168px;
       height: auto;
       display: block;
       opacity: 1;
     }
     @include desktop {
+      top: 401px;
       left: 878px;
       width: 293px;
       height: auto;
       display: block;
     }
   }
-
   &__hero-milk {
     display: none;
     @include tablet {
@@ -267,7 +257,6 @@
   @include tablet {
     gap: 30px;
   }
-
   &__links {
     display: none;
     @include desktop {
