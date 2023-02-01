@@ -9,24 +9,20 @@
     padding-top: 127px;
     padding-bottom: 119px;
   }
-
   &__box {
     display: flex;
     flex-direction: column;
     gap: 17px;
-
     @include tablet {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 20px;
     }
-
     @include desktop {
       gap: 30px;
     }
   }
-
   &__description-title {
     @include text(400, 18px, 1.15, $iceColor, $font-titan);
     letter-spacing: 0.04em;
@@ -40,7 +36,6 @@
       font-size: 30px;
     }
   }
-
   &__title-section {
     @include text(400, 34px, 1.15, $redColor, $font-titan);
     letter-spacing: 0.04em;
@@ -54,7 +49,6 @@
       font-size: 58px;
     }
   }
-
   &__wrapper {
     width: 280px;
     border-radius: 24px;
@@ -69,40 +63,32 @@
       width: 329px;
       margin-top: 259px;
     }
-
     &--cream-bg {
       background: $secondaryColor;
     }
-
     &--caffe-bg {
       background: $coffeeColor;
     }
-
     &--milkshakes-bg {
       background: $milkshakeColor;
     }
   }
-
   &__wrap {
     position: relative;
   }
-
   &__img {
     display: flex;
     position: absolute;
     width: 249px;
     left: 50%;
     transform: translate(-50%, -50%);
-
     @include tablet {
       width: 220px;
     }
-
     @include desktop {
       width: 335px;
     }
   }
-
   &__title {
     @include text(400, 20px, 1.15, $primaryColor, $font-titan);
     letter-spacing: 0.04em;
@@ -121,7 +107,6 @@
       padding-top: 193px;
     }
   }
-
   &__list-dot {
     list-style: none;
     display: flex;
@@ -133,7 +118,6 @@
       padding-bottom: 30px;
     }
   }
-
   &__item-dot::after {
     content: '';
     display: flex;
@@ -143,7 +127,6 @@
     margin-right: 4px;
     background-color: $primaryColor;
   }
-
   &__content {
     @include text(700, 14px, 1.52, $primaryColor, $font-dm-sans);
     letter-spacing: 0.04em;
@@ -151,7 +134,6 @@
     text-align: center;
     margin-bottom: 30px;
     padding: 0px 39px 0px 41px;
-
     @include tablet {
       padding: 0 11px;
     }
