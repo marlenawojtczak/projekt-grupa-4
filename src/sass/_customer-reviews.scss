@@ -93,10 +93,7 @@
     position: relative;
     z-index: 1;
     padding: 0px 16px 0px 7px;
-    font-family: $font-dm-sans;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.55;
+    @include text(500, 12px, 2.55, $firstFontColor, $font-dm-sans);
     text-align: center;
     @include tablet {
       padding: 0px 44px 0px 20px;
@@ -106,8 +103,7 @@
     }
     @include desktop {
       padding: 0px 35px 0px 28px;
-      font-size: 16px;
-      line-height: 1.86;
+      @include text(500, 16px, 1.86, $firstFontColor, $font-dm-sans);
       letter-spacing: 0.04em;
       background-image: repeating-linear-gradient(
         transparent 0px,
@@ -141,10 +137,8 @@
     }
   }
   &__name {
+    @include text(500, 14px, 1.86, $firstFontColor, $font-dm-sans);
     font-family: $font-dm-sans;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
     padding-top: 18px;
     text-align: center;
     position: relative;
