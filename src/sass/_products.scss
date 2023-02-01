@@ -56,6 +56,7 @@
     margin: 0 auto;
     margin-top: 144px;
     @include tablet {
+      margin-top: 150px;
       width: 220px;
       padding-bottom: 40px;
     }
