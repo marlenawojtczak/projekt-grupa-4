@@ -31,38 +31,38 @@
     @include tablet {
       margin-bottom: 90px;
       max-width: 340px;
-    }
-    @include desktop {
-      margin-bottom: 97px;
-      max-width: 100%;
-    }
-    &--small {
-      @include text(400, 18px, 1.15, $iceColor, $font-titan);
-      @include tablet {
-        font-size: 26px;
-        letter-spacing: 0.04em;
-      }
-      @include desktop {
-        font-size: 30px;
-      }
-      text-transform: uppercase;
-      font-style: normal;
-      margin-bottom: 17px;
-    }
-    &--big {
-      @include text(400, 34px, 1.15, $buttonFirstColor, $font-titan);
-      letter-spacing: 0.04em;
-      @include tablet {
-        font-size: 48px;
-        letter-spacing: 0.06em;
-      }
-      @include desktop {
-        font-size: 58px;
-      }
-      text-transform: uppercase;
-      font-style: normal;
-    }
   }
+  @include desktop {
+    margin-bottom: 97px;
+    max-width: 100%;
+  }
+}
+  &__text-small {
+  @include text (400, 18px, 1.15, $iceColor, $font-titan);
+  @include tablet {
+    font-size: 26px;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
+  text-transform: uppercase;
+  font-style:normal;
+  margin-bottom: 17px;  
+  }
+    &__text-big {
+    @include text (400, 34px, 1.15, $buttonFirstColor, $font-titan);
+  letter-spacing: 0.04em;
+    @include tablet {
+      font-size: 48px;
+      letter-spacing: 0.06em;
+  }
+    @include desktop {
+      font-size: 58px;
+  }
+  text-transform: uppercase;
+  font-style:normal;
+    }
   &__contact {
     display: flex;
     flex-direction: column;
