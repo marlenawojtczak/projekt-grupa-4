@@ -136,8 +136,6 @@
     background-position: center;
     background-size: cover;
     cursor: pointer;
-    transition-duration: $transitionDurationDefault;
-    transition-timing-function: $transitionTimingDefault;
     @include desktop {
       width: 26px;
       height: 26px;
@@ -145,6 +143,8 @@
     &:hover,
     &:focus {
       transform: scale(1.3);
+      transition-duration: $transitionDurationDefault;
+      transition-timing-function: $transitionTimingDefault;
     }
   }
   &__element {
