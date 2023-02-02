@@ -97,42 +97,46 @@
     }
   }
   &__cow-text {
-    padding: 0px 30px 17px 30px;
     display: flex;
     flex-direction: column;
     font-family: $font-dm-sans;
     gap: 47px;
     @include tablet {
-      padding: 50px 0px 62px 0px;
       gap: 49px;
     }
     @include desktop {
-      padding: 51px 0px 45px 0px;
       gap: 35px;
     }
-    &--black {
-      @include text(500, 12px, 1.62, $firstFontColor, $font-dm-sans);
-      text-align: left;
-      @include tablet {
-        font-size: 14px;
-        line-height: 1.76;
-      }
-      @include desktop {
-        font-size: 16px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;
-      }
+  }
+  &__cow-text--black {
+    @include text(500, 12px, 1.62, $firstFontColor, $font-dm-sans);
+    text-align: left;
+    padding-top: 46px;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.76;
+      padding-top: 50px;
     }
-    &--grey {
-      @include text(500, 12px, 1.62, $secondFontColor, $font-dm-sans);
-      @include tablet {
-        font-size: 14px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;
-      }
-      @include desktop {
-        line-height: 1.94;
-      }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+      padding-top: 56px;
+    }
+  }
+  &__cow-text--grey {
+    @include text(500, 12px, 1.62, $secondFontColor, $font-dm-sans);
+    padding-bottom: 47px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+      padding-bottom: 62px;
+    }
+    @include desktop {
+      line-height: 1.94;
+      padding-bottom: 45px;
     }
   }
   &__button {
